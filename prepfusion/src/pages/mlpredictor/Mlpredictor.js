@@ -5,7 +5,7 @@ import './Mlpredictor.css'
 export default function mlpredictor() {
   return (
     <div>
-      ML predictor page
+      fork by rutvik
     </div>
   )
 }
