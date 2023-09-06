@@ -16,7 +16,7 @@ function App() {
     <Routes>
       <Route path='/' element = {<Homepage/>} />
       <Route path='/problemset' element = {<Problemset/>} />
-      <Route path='/mlpredictor' element = {<Mlpredictor/>} />
+      <Route path='/upload' element = {<Mlpredictor/>} />
     </Routes>
 
    <Footer/>
