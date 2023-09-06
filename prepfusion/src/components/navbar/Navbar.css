@@ -16,8 +16,16 @@
   align-items: center;
   align-content: center;
   padding: 0px 43px;
-  height: 95px;
+  height: 80px;
   overflow: hidden;
+}
+.logo{
+  width:auto;
+  height: auto;
+  display:flex ;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .navbar img {
@@ -27,21 +35,21 @@
 
 .navbar .logo span #fusion {
   color: #0069ff;
-  width: 400px;
-  height: 45px;
+  width: auto;
+  height: 55px;
   font-family: "Handlee";
   font-style: normal;
   font-weight: 400;
-  font-size: 54px;
+  font-size: 48px;
   line-height: 75px;
 }
 .navbar .logo span {
-  width: 400px;
-  height: 45px;
+  width: auto;
+  height: 55px;
   font-family: "Handlee";
   font-style: normal;
   font-weight: 400;
-  font-size: 54px;
+  font-size: 48px;
   line-height: 75px;
 }
 
@@ -76,12 +84,12 @@
   background: #0069ff;
   border: 1px solid #17a2b8;
   border-radius: 25px;
-  width: 125px;
-  height: 45px;
+  width: 120px;
+  height: 40px;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 24px;
   color: #ffffff;
 }
