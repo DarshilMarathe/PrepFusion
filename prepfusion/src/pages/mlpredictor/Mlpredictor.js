@@ -5,50 +5,50 @@ import image from "./upload-page-image.png";
 export default function mlpredictor() {
   return (
     <div>
-      <div class="container">
-        <p class="heading">Upload image to predict module</p>
-        <div class="sub-container">
-          <div class="image-container">
+      <div className="ML_section">
+        <p className="heading">Upload image to predict module</p>
+        <div className="ML_sub-container">
+          <div className="MLimage-container">
             <img src={image} alt="Image" />
           </div>
-          <div class="drag-drop-container">
-            <div class="drag-drop-area" id="dropzone">
-              <button class="upload-image-button">Upload image</button>
-              <p class="info">or drop a file</p>
+          <div className="drag-drop-contain">
+            <div className="drag-drop-area" id="dropzone">
+              <button className="upload-image-button">Upload image</button>
+              <p className="ML_info">or drop a file</p>
             </div>
-            <p class="info">No image ?</p>
-            <p class="info">Type the question</p>
+            <p className="ML_info">No image ?</p>
+            <p className="ML_info">Type the question</p>
           </div>
         </div>
       </div>
 
-      <div class="enter-text">
-        <div class="header">
+      <div className="enter-textML">
+        <div className="header2">
           <p>Recognized text is incorrect?</p>
           <h3>Type question</h3>
         </div>
-        <div class="enter-text-area">
+        <div className="enter-text-areaML">
           <div contenteditable="true">Your question....</div>
           <button>Enter text</button>
         </div>
       </div>
 
-      <div class="predictions">
-        <div class="label-textarea">
-          <label for="myTextarea">Extracted Text:</label>
-          <div readonly class="myTextarea" name="myTextarea">
+      <div className="predictions_section">
+        <div className="label-flex-ml">
+          <label for="extracttextarea">Extracted Text:</label>
+          <div readonly className="extracttextarea" name="extracttextarea">
             This is some text with an <a href="">Extracted Text</a>
           </div>
         </div>
-        <div class="label-textarea">
-          <label for="myTextarea">Predicted Subject:</label>
-          <div readonly class="myTextarea" name="myTextarea">
+        <div className="label-flex-ml">
+          <label for="extracttextarea">Predicted Subject:</label>
+          <div readonly className="extracttextarea" name="extracttextarea">
             This is some text with an <a href="">Copy</a>
           </div>
         </div>
-        <div class="label-textarea">
-          <label for="myTextarea">Predicted Module:</label>
-          <div readonly class="myTextarea" name="myTextarea">
+        <div className="label-flex-ml">
+          <label for="extracttextarea">Predicted Module:</label>
+          <div readonly className="extracttextarea" name="extracttextarea">
             This is some text with an <a href="">Copy</a>
           </div>
         </div>

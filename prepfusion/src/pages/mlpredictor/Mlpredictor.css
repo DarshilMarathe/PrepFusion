@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
-body {
-  margin: 0px;
-}
 
-.heading {
+.ML_section .heading {
   width: auto;
   height: auto;
   margin: 0px;
@@ -16,21 +13,21 @@ body {
   color: #454545;
   text-align: center;
 }
-.info {
+.ML_info {
   margin: 0px;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
 }
-.sub-container {
+.ML_sub-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
   padding: 20px;
 }
 
-.container {
+.ML_section{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -38,7 +35,7 @@ body {
   gap: 30px;
 }
 
-.image-container {
+.ML_sub-container .MLimage-container {
   width: 350px;
   height: 350px;
   border: 1px solid #ccc;
@@ -46,12 +43,12 @@ body {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
 }
 
-img {
+.MLimage-container img {
   width: 350px;
   height: 350px;
   border-radius: 34px;
 }
-.upload-image-button {
+.drag-drop-area .upload-image-button {
   color: #ffffff;
   width: 130px;
   height: 40px;
@@ -64,10 +61,10 @@ img {
   font-size: 16px;
   line-height: 24px;
 }
-.upload-image-button:hover {
+.drag-drop-area .upload-image-button:hover {
   background-color: #17a2b8;
 }
-.drag-drop-area {
+.drag-drop-contain .drag-drop-area {
   width: 500px;
   height: 300px;
   border: 1px solid #ffffff;
@@ -82,7 +79,7 @@ img {
   text-align: center;
   cursor: pointer;
 }
-.drag-drop-container {
+.drag-drop-contain {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,7 +88,7 @@ img {
   gap: 10px;
 }
 
-.enter-text {
+.enter-textML {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,7 +96,7 @@ img {
   gap: 50px;
 }
 
-.header {
+.enter-textML .header2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +104,7 @@ img {
   gap: 15px;
 }
 
-.header p {
+.enter-textML .header2 p {
   text-align: center;
   width: auto;
   height: auto;
@@ -119,7 +116,7 @@ img {
   color: #454545;
 }
 
-.header h3 {
+.enter-textML .header2 h3 {
   width: 431px;
   height: auto;
   margin: 0px;
@@ -131,7 +128,7 @@ img {
   text-align: center;
 }
 
-.enter-text-area {
+.enter-text-areaML {
   width: 958px;
   min-height: 260px;
   height: auto;
@@ -145,7 +142,7 @@ img {
   align-items: center;
 }
 
-.enter-text-area div {
+.enter-text-areaML div {
   width: 896px;
   height: auto;
   padding: 20px;
@@ -159,7 +156,7 @@ img {
   line-height: 32px;
 }
 
-.enter-text-area button {
+.enter-text-areaML button {
   background: #0069ff;
   border: 1px solid #17a2b8;
   border-radius: 23px;
@@ -172,100 +169,14 @@ img {
   line-height: 24px;
   color: #ffffff;
 }
-.enter-text-area button:hover {
+.enter-text-areaML button:hover {
   background-color: #17a2b8;
 }
 
-/* 2nd component css */
-
-.enter-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 50px;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 15px;
-}
-
-.header p {
-  text-align: center;
-  width: auto;
-  height: auto;
-  margin: 5px;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #454545;
-}
-
-.header h3 {
-  width: 431px;
-  height: auto;
-  margin: 0px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 50px;
-  color: #454545;
-  text-align: center;
-}
-
-.enter-text-area {
-  width: 958px;
-  min-height: 260px;
-  height: auto;
-  padding: 20px;
-  background: #ffffff;
-  box-shadow: 0px 0px 56px rgba(69, 69, 69, 0.2);
-  border-radius: 35px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.enter-text-area div {
-  width: 896px;
-  height: auto;
-  padding: 20px;
-  background: #ffffff;
-  border: 1px solid #f6ca5a;
-  border-radius: 35px;
-  font-family: "Nunito";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 32px;
-}
-
-.enter-text-area button {
-  background: #0069ff;
-  border: 1px solid #17a2b8;
-  border-radius: 23px;
-  width: 155px;
-  height: 45px;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 24px;
-  color: #ffffff;
-}
-.enter-text-area button:hover {
-  background-color: #17a2b8;
-}
 
 /* 3rd component css */
 
-.label-textarea {
+.label-flex-ml {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -274,7 +185,7 @@ img {
   gap: 63px;
 }
 
-.myTextarea {
+.extracttextarea {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -293,7 +204,7 @@ img {
   overflow: hidden;
 }
 
-.myTextarea a {
+.extracttextarea a {
   text-decoration: none;
   font-family: "Nunito";
   font-style: normal;
@@ -304,7 +215,7 @@ img {
   margin-right: 5px;
 }
 
-.label-textarea label {
+.label-flex-ml label {
   width: 165px;
   height: 30px;
 
@@ -316,6 +227,7 @@ img {
   color: #1c4b74;
 }
 
-.predictions {
-  margin: 60px;
+.predictions_section {
+  /* margin: 60px; */
+  margin-top: 10vh;
 }
