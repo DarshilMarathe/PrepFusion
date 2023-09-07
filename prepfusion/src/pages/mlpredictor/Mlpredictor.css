@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+body {
+  margin: 0px;
+}
+
+.heading {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  color: #454545;
+  text-align: center;
+}
+.info {
+  margin: 0px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.sub-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 30px;
+}
+
+.image-container {
+  width: 350px;
+  height: 350px;
+  border: 1px solid #ccc;
+  border-radius: 34px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: 350px;
+  height: 350px;
+  border-radius: 34px;
+}
+.upload-image-button {
+  color: #ffffff;
+  width: 130px;
+  height: 40px;
+  background: #0f70e6;
+  border: 1px solid #0f70e6;
+  border-radius: 99px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.upload-image-button:hover {
+  background-color: #17a2b8;
+}
+.drag-drop-area {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.drag-drop-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.enter-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 50px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+}
+
+.header p {
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 5px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #454545;
+}
+
+.header h3 {
+  width: 431px;
+  height: auto;
+  margin: 0px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  color: #454545;
+  text-align: center;
+}
+
+.enter-text-area {
+  width: 958px;
+  min-height: 260px;
+  height: auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 56px rgba(69, 69, 69, 0.2);
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.enter-text-area div {
+  width: 896px;
+  height: auto;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #f6ca5a;
+  border-radius: 35px;
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+}
+
+.enter-text-area button {
+  background: #0069ff;
+  border: 1px solid #17a2b8;
+  border-radius: 23px;
+  width: 165px;
+  height: 50px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.enter-text-area button:hover {
+  background-color: #17a2b8;
+}
+
+/* 2nd component css */
+
+.enter-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 50px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+}
+
+.header p {
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 5px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #454545;
+}
+
+.header h3 {
+  width: 431px;
+  height: auto;
+  margin: 0px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  color: #454545;
+  text-align: center;
+}
+
+.enter-text-area {
+  width: 958px;
+  min-height: 260px;
+  height: auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 56px rgba(69, 69, 69, 0.2);
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.enter-text-area div {
+  width: 896px;
+  height: auto;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #f6ca5a;
+  border-radius: 35px;
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+}
+
+.enter-text-area button {
+  background: #0069ff;
+  border: 1px solid #17a2b8;
+  border-radius: 23px;
+  width: 155px;
+  height: 45px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.enter-text-area button:hover {
+  background-color: #17a2b8;
+}
+
+/* 3rd component css */
+
+.label-textarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 63px;
+}
+
+.myTextarea {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  padding: 10px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 34px;
+  color: #000000;
+  height: auto;
+  width: 900px;
+  overflow: hidden;
+}
+
+.myTextarea a {
+  text-decoration: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 34px;
+  color: #0069ff;
+  margin-right: 5px;
+}
+
+.label-textarea label {
+  width: 165px;
+  height: 30px;
+
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 39px;
+  color: #1c4b74;
+}
+
+.predictions {
+  margin: 60px;
+}
