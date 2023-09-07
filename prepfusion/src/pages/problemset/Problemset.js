@@ -1,4 +1,5 @@
 import React from "react";
+import { useState ,useEffect} from "react";
 import "./Problemset.css";
 
 import solImage from "../../images/solution-image.png";
@@ -6,7 +7,21 @@ import top from "../../images/top.png";
 import top1 from "../../images/top1.png";
 import top2 from "../../images/top2.png";
 
-export default function problemset() {
+export default function Problemset() {
+
+    const [selectedSubject, setSelectedSubject] = useState("All");
+    const [selectedMarks, setSelectedMarks] = useState("All");
+    const [selectedYear, setSelectedYear] = useState("All");
+  
+    // Filter the data based on user selections
+    const filteredData = data.filter((item) => {
+      return (
+        (selectedSubject === "All" || item.Subject === selectedSubject) &&
+        (selectedMarks === "All" || item.Marks.toString() === selectedMarks) &&
+        (selectedYear === "All" || item.Year === selectedYear)
+      );
+    });
+
   return (
     <>
       <div className="headerPS">
@@ -67,10 +82,12 @@ export default function problemset() {
 
           <div className="select2 s21">
             <span> Subject : </span>
-            <select name="subject" id="subject">
+            <select name="subject" id="subject" value={selectedSubject}
+            onChange={(e) => setSelectedSubject(e.target.value)}
+         >
               <option value="All" selected>All</option>
-              <option value="All">ADSA</option>
-              <option value="F.E">CNS</option>
+              <option value="ADSA">ADSA</option>
+              <option value="CNS">CNS</option>
               <option value="S.E">IP</option>
               <option value="T.E">SE</option>
               <option value="B.E">EEB</option>
@@ -79,7 +96,9 @@ export default function problemset() {
 
           <div className="select2 s22">
            <span> Year : </span>
-            <select name="Branch" id="Branch">
+            <select name="Branch" id="Branch" value={selectedYear}
+            onChange={(e) => setSelectedYear(e.target.value)}
+          >
               <option value="All" slected>All</option>
               <option value="CS">2020</option>
               <option value="CS">2019</option>
@@ -90,11 +109,14 @@ export default function problemset() {
 
           <div className="select2 s23">
            <span> Marks : </span>
-            <select name="Branch" id="Branch">
+            {/* <select name="Branch" id="Branch" onChange={handleMarks}> */}
+            <select name="Branch" id="Branch"  value={selectedMarks}
+            onChange={(e) => setSelectedMarks(e.target.value)}
+         >
               <option value="All" slected>All</option>
-              <option value="CS">10</option>
-              <option value="CS">5</option>
-              <option value="IT">2</option>
+              <option value="10">10</option>
+              <option value="5">5</option>
+              <option value="2">2</option>
             </select>
           </div>
 
@@ -118,8 +140,11 @@ export default function problemset() {
           <th style={{width:"10%"}}>Marks</th>
           <th style={{width:"10%"}}>Year</th>
         </tr>
-        {data.map((item, i) => (
-          <tr >
+        {/* {data.map((item, i) => (
+        // {(data.filter(item => (item.Marks === 5  && item.Year === 'Dec-19' && item.Subject === 'ADSA'  ))).map((item, i) => (
+          <tr > */}
+           {filteredData.map((item, i) => (
+            <tr key={i}>
             <td className="table_center">{i + 1}</td>
             <td>{item.Questions}</td>
             <td className="table_center">
@@ -144,7 +169,7 @@ const data = [
     Marks: 5,
     Year: "Dec-18",
     Module: 3,
-    Subject: "ADSA",
+    Subject: "CNS",
   },
   {
     Questions: "Explain flow shop scheduling technique",
@@ -413,7 +438,7 @@ const data = [
     Subject: "ADSA",
   },
   {
-    Questions: "Explain Rabin Karp Algorithm in detail",
+    Questions: "Explain Rabin Karp Algorithm in detail",
     Marks: 10,
     Year: "Dec-19",
     Module: 5,
