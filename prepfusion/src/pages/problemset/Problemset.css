@@ -50,6 +50,8 @@
     display: flex;
     margin-bottom: 2vh;
     padding-left: 5vw;
+    /* justify-content: center; */
+
 }
 
 .select select{
@@ -89,6 +91,8 @@
     display: flex;
     margin-bottom: 2vh;
     padding-left: 5vw;
+    /* justify-content: center; */
+
 }
 
 .select2 select{
@@ -154,3 +158,12 @@ text-align: center;
     /* background-color: #D6EEEE; */
     background-color: #EAEEFF;
   }
+
+.tablePS table tr th{
+    color: rgba(9, 9, 25, 0.6);
+font-family: Segoe UI;
+/* font-size: 13px; */
+/* font-style: normal; */
+font-weight: 400;
+/* line-height: 21px; 161.538% */
+}

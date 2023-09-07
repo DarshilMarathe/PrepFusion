@@ -1,8 +1,10 @@
 import React from "react";
 import "./Problemset.css";
 
-import solImage from "./solution-image.png";
-import top from "./top.png";
+import solImage from "../../images/solution-image.png";
+import top from "../../images/top.png";
+import top1 from "../../images/top1.png";
+import top2 from "../../images/top2.png";
 
 export default function problemset() {
   return (
@@ -17,7 +19,7 @@ export default function problemset() {
         </div>
 
         <div className="header0 header1">
-          <img src={top} alt="top_img" />
+          <img src={top1} alt="top_img" />
           <div className="txt">
             <p className="txt1">Study Material</p>
             <p className="txt2">Ace better with resources</p>
@@ -25,7 +27,7 @@ export default function problemset() {
         </div>
 
         <div className="header0 header1">
-          <img src={top} alt="top_img" />
+          <img src={top2} alt="top_img" />
           <div className="txt">
             <p className="txt1">Viva Specific</p>
             <p className="txt2">Strong Foundational Plan</p>
@@ -52,7 +54,7 @@ export default function problemset() {
           <div className="select s2">
            <span> Branch : </span>
             <select name="Branch" id="Branch">
-              <option value="All" slected>ALL</option>
+              <option value="All" slected>All</option>
               <option value="CS">CS</option>
               <option value="IT">IT</option>
               <option value="AIDS">AIDS</option>
@@ -78,7 +80,7 @@ export default function problemset() {
           <div className="select2 s22">
            <span> Year : </span>
             <select name="Branch" id="Branch">
-              <option value="All" slected>ALL</option>
+              <option value="All" slected>All</option>
               <option value="CS">2020</option>
               <option value="CS">2019</option>
               <option value="IT">2018</option>
@@ -89,7 +91,7 @@ export default function problemset() {
           <div className="select2 s23">
            <span> Marks : </span>
             <select name="Branch" id="Branch">
-              <option value="All" slected>ALL</option>
+              <option value="All" slected>All</option>
               <option value="CS">10</option>
               <option value="CS">5</option>
               <option value="IT">2</option>
