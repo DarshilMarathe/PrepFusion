@@ -9,7 +9,7 @@ export default function problemset() {
     <>
       <div className="headerPS">
         <div className="header0 header1">
-            <img src={top} alt="top_img" />
+          <img src={top} alt="top_img" />
           <div className="txt">
             <p className="txt1">Top Questions for Each Subject</p>
             <p className="txt2">Currated by PrepFusion Team</p>
@@ -17,7 +17,7 @@ export default function problemset() {
         </div>
 
         <div className="header0 header1">
-            <img src={top} alt="top_img" />
+          <img src={top} alt="top_img" />
           <div className="txt">
             <p className="txt1">Study Material</p>
             <p className="txt2">Ace better with resources</p>
@@ -25,40 +25,112 @@ export default function problemset() {
         </div>
 
         <div className="header0 header1">
-            <img src={top} alt="top_img" />
+          <img src={top} alt="top_img" />
           <div className="txt">
             <p className="txt1">Viva Specific</p>
             <p className="txt2">Strong Foundational Plan</p>
           </div>
         </div>
       </div>
-      Problemset page
-      <br />
-      <br />
-      <br />
-      <br />
+
+
+      <div className="selctionPS">
+
+        <div className="selection1">
+
+          <div className="select s1">
+            <span> Select Your Year : </span>
+            <select name="studentYear" id="studentYear">
+              <option value="All" selected>Select Year</option>
+              <option value="F.E">First Year</option>
+              <option value="S.E">Second Year</option>
+              <option value="T.E">Third Year</option>
+              <option value="B.E">Fouth Year</option>
+            </select>
+          </div>
+
+          <div className="select s2">
+           <span> Branch : </span>
+            <select name="Branch" id="Branch">
+              <option value="All" slected>ALL</option>
+              <option value="CS">CS</option>
+              <option value="IT">IT</option>
+              <option value="AIDS">AIDS</option>
+              <option value="EXTC">EXTC</option>
+            </select>
+          </div>
+        </div>
+
+        <div className="selection2">
+
+          <div className="select2 s21">
+            <span> Subject : </span>
+            <select name="subject" id="subject">
+              <option value="All" selected>All</option>
+              <option value="All">ADSA</option>
+              <option value="F.E">CNS</option>
+              <option value="S.E">IP</option>
+              <option value="T.E">SE</option>
+              <option value="B.E">EEB</option>
+            </select>
+          </div>
+
+          <div className="select2 s22">
+           <span> Year : </span>
+            <select name="Branch" id="Branch">
+              <option value="All" slected>ALL</option>
+              <option value="CS">2020</option>
+              <option value="CS">2019</option>
+              <option value="IT">2018</option>
+              <option value="AIDS">2017</option>
+            </select>
+          </div>
+
+          <div className="select2 s23">
+           <span> Marks : </span>
+            <select name="Branch" id="Branch">
+              <option value="All" slected>ALL</option>
+              <option value="CS">10</option>
+              <option value="CS">5</option>
+              <option value="IT">2</option>
+            </select>
+          </div>
+
+          <div className="select2 s24">
+            <input type="text" placeholder="Type your question" />
+           <span className="colorblue"> Search </span>
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* Table  */}
+      <div className="tablePS">
       <table>
-        <tr>
-          <th>Sr. No</th>
-          <th>Question</th>
-          <th>Solution</th>
-          <th>Subject</th>
-          <th>Marks</th>
-          <th>Year</th>
+        <tr className="prob_row">
+          <th style={{width:"10%"}}>Sr. No</th>
+          <th style={{width:"50%"}} >Question</th>
+          <th style={{width:"10%"}}>Solution</th>
+          <th style={{width:"10%"}}>Subject</th>
+          <th style={{width:"10%"}}>Marks</th>
+          <th style={{width:"10%"}}>Year</th>
         </tr>
         {data.map((item, i) => (
-          <tr>
-            <td></td>
+          <tr >
+            <td className="table_center">{i + 1}</td>
             <td>{item.Questions}</td>
-            <td>
+            <td className="table_center">
               <img src={solImage} width="18px" alt="" />
             </td>
-            <td>{item.Subject}</td>
-            <td>{item.Marks}</td>
-            <td>{item.Year}</td>
+            <td className="table_center">{item.Subject}</td>
+            <td className="table_center">{item.Marks}</td>
+            <td className="table_center">{item.Year}</td>
           </tr>
         ))}
       </table>
+      </div>
+      
     </>
   );
 }
