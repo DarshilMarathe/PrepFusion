@@ -8,8 +8,8 @@ import logo from './logo.png';
 export default function Navbar() {
 
   return (
-    <div class="navbar">
-        <div class="logo">
+    <div className="navbar">
+        <div className ="logo">
             <img src={logo} alt="Company Logo" />
             <span>Prep<span id="fusion">Fusion</span></span>
         </div>
@@ -20,7 +20,7 @@ export default function Navbar() {
             <li>Statistics</li>
             <li>About</li>
         </ul>
-        <button class="login-button">Login</button>
+        <button className ="login-button">Login</button>
     </div>
 
       // {/* <ul>
