@@ -142,7 +142,7 @@
     font-size: 40px;
     margin: 0;
     font-family: 'Poppins';
-    color: #0069ff;
+    color: #1C4B74;
 }
 
 .homepage_2_p {
@@ -264,7 +264,7 @@
     font-size: 45px;
     font-style: 'Poppins';
     padding-bottom: 0px;
-    color: #0069FF;
+    color: #1C4B74;
 }
 
 .homepage_bp, 
@@ -290,24 +290,26 @@
     margin-top: 20px ;
     margin-bottom: 0px;
     font-weight: bold;
-    color: #0047b3;
+    color: #528BFF;
 }
 
 .homepage_si{
     text-align: right;
-    padding-right: 300px;
-    color: #0069ff;
+    padding-left: 670px;
+    padding-right: 0px;
+    color: #528BFF;
 }
 
 .homepage_opt{
-    padding-left: 300px;
-    color: #0069ff;
+    padding-left: 105px;
+    color: #4A6D8A;
 }
 
 .homepage_lep{
     text-align: right;
     padding-right: 105px;
-    color: #0047b3;
+    color: #4A6D8A;
+    padding-left: 490px;
 }
 
 
