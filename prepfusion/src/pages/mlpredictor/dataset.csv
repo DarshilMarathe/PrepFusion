@@ -1,0 +1,1403 @@
+Questions,Module,Subject
+working of web browser,1,IP
+web browser,1,IP
+HTTP,1,IP
+HTTP protocol,1,IP
+http protocol,1,IP
+http,1,IP
+HTTPS,1,IP
+https,1,IP
+DNS,1,IP
+dns,1,IP
+working of DNS,1,IP
+TLS,1,IP
+tls,1,IP
+XML,1,IP
+xml,1,IP
+extended markup language,1,IP
+markup,1,IP
+JSON,1,IP
+json,1,IP
+DOM,1,IP
+dom,1,IP
+URL,1,IP
+url,1,IP
+document object manipulation,1,IP
+uniform resource locator,1,IP
+URI,1,IP
+uniform resource indicator,1,IP
+REST API,1,IP
+REST,1,IP
+web programming,1,IP
+web programming fundamentals,1,IP
+nginx server,1,IP
+java script,2,IP
+Java Script,2,IP
+Java script,2,IP
+JS,2,IP
+ES5,2,IP
+ES6,2,IP
+es5,2,IP
+es6,2,IP
+difference between es5 and es6,2,IP
+variable,2,IP
+variables,2,IP
+variables in javascript,2,IP
+conditions in javascript,2,IP
+conditions,2,IP
+loops,2,IP
+loops in javascript,2,IP
+functions in javascript,2,IP
+events in javascript,2,IP
+arrow,2,IP
+arrow function,2,IP
+setting CSS styles using javascript,2,IP
+query selector,2,IP
+query selector all,2,IP
+DOM manipulation,2,IP
+classes in javascript,2,IP
+inheritance in javascript,2,IP
+iterator,2,IP
+generator,2,IP
+promise,2,IP
+promises in ES6,2,IP
+client server,2,IP
+client server communication,2,IP
+fetch,2,IP
+asynchronuous java script,2,IP
+react fundamentals,3,IP
+react installation,3,IP
+react libraries,3,IP
+react folder,3,IP
+react file structure,3,IP
+react folder and file structure,3,IP
+react components,3,IP
+react component lifecycle,3,IP
+react state,3,IP
+react props,3,IP
+react router,3,IP
+single page application,3,IP
+UI design,3,IP
+react forms,3,IP
+react events,3,IP
+react animation,3,IP
+react best practices,3,IP
+react vs angular vs vue,3,IP
+JSX,3,IP
+advanced react,4,IP
+react function components,4,IP
+react refs,4,IP
+refs,4,IP
+react use effect,4,IP
+react hooks,4,IP
+hooks,4,IP
+flow architecture,4,IP
+react flow architecture,4,IP
+react model-view controller framework,4,IP
+model-view controller framework,4,IP
+flux,4,IP
+react flux,4,IP
+bundling the application,4,IP
+web pack,4,IP
+react native,4,IP
+Node js,5,IP
+Node.js,5,IP
+environement setup,5,IP
+first app,5,IP
+node js asynchronous programming,5,IP
+callback concept,5,IP
+event loops,5,IP
+REPL,5,IP
+event emitter,5,IP
+networking module,5,IP
+buffer,5,IP
+buffers,5,IP
+stream,5,IP
+streams,5,IP
+node js file system,5,IP
+web module,5,IP
+node js with mongodb,5,IP
+Express,6,IP
+express,6,IP
+express router,6,IP
+rest api generator,6,IP
+generator,6,IP
+authentication,6,IP
+session,6,IP
+sessions,6,IP
+integrating with react,6,IP
+commercial deployment,6,IP
+Explain REST API in detail.,1,IP
+Compare XML and JSON.,1,IP
+Explain React component life cycle.,3,IP
+What are Buffers and Streams in NodeJs? Explain with example.,5,IP
+Explain asynchronous programming in detail.,5,IP
+What is DNS? Explain working of DNS.,1,IP
+What is NodeJs? Explain features of NodeJs. State different types of NodeJs Modules.,5,IP
+Explain Arrow function in ES6 with an example.,2,IP
+What are Refs? When to use Refs and when not to use Refs?,4,IP
+Explain routing in ExpressJS along with an example.,6,IP
+REPL,5,IP
+DOM,1,IP
+JSX,3,IP
+URL,1,IP
+NPM,3,IP
+Explain Promises in ES6.,3,IP
+Compare MVC and Flux.,4,IP
+Explain XML Schema in detail.,1,IP
+Explain Redux architecture in detail.,3,IP
+Differentiate between ES5 and ES6.,3,IP
+Explain Event Loop in NodeJs,5,IP
+Write a note on ExpressJs.,6,IP
+What are events in Javascript? Explain different types of events.,3,IP
+Differentiate between HTML and XML.,1,IP
+Write an HTML code to process placement registration form which accepts the student details,0,IP
+Write a HTML5 code for embedding audio & video elements in web page.,0,IP
+Write an external stylesheet and link it with HTML code. The stylesheet should include the following:.,0,IP
+"Write code to process online Alumni information for your college. Create forms to get name, address,",0,IP
+Write HTML5 code for embedding the audio and video elements in the web page.,0,IP
+"Create a HTML page Showing a message ""I use media query"". Write media query such that the text color",0,IP
+"Create a HTML form that accepts first name, last name, department and designation from user.",0,IP
+Explain with proper syntax and example how to use different types of CSS selectors.,0,IP
+"Create a HTML form to accept name (TextField), address (TextArea), gender (Radio), and Country (DropDown)",0,IP
+What is the difference between class selector and ID selector.,0,IP
+Explain built-in objects in JavaScript.,3,IP
+What are the benefits of using JSON over XML data?,1,IP
+List and explain different features of React.,3,IP
+write javascript code to validate,3,IP
+Explain React JSX,3,IP
+What is NodeJs? Explain features of NodeJs. State different types of NodeJs Modules.,5,IP
+Explain React component life cycle.,3,IP
+Explain REST API in detail.,1,IP
+What are Refs? When to use Refs and when not to use Refs?,4,IP
+Explain Arrow function in ES6 with an example.,3,IP
+What are Buffers and Streams in NodeJs? Explain with example.,5,IP
+What is DNS? Explain working of DNS.,1,IP
+Write HTML5 code for embedding the audio and video elements in the web page.,0,IP
+Explain routing in ExpressJS along with an example.,6,IP
+,,
+Computer security,1,CNS
+Network Security,1,CNS
+CIA services,1,CNS
+CIA triad,1,CNS
+Confidentiality,1,CNS
+Integrity,1,CNS
+Availability,1,CNS
+Authentication,1,CNS
+Authorization,1,CNS
+Non-repudiation,1,CNS
+Data encryption,1,CNS
+Access control,1,CNS
+masqurading,1,CNS
+replay,1,CNS
+eavesdropping,1,CNS
+Phishing,1,CNS
+Spoofing,1,CNS
+Vulnerability,1,CNS
+Exploit,1,CNS
+Penetration testing,1,CNS
+Cryptography,1,CNS
+Symmetric encryption,1,CNS
+Asymmetric encryption,1,CNS
+Block cipher,1,CNS
+Stream cipher,1,CNS
+Substitution cipher,1,CNS
+Vigenere cipher,1,CNS
+Playfair cipher,1,CNS
+Transposition cipher,1,CNS
+Keyed transposition cipher,1,CNS
+Keyless transposition cipher,1,CNS
+Classical encryption,1,CNS
+Mono-alphabetic substitution technique,1,CNS
+Poly-alphabetic substitution technique,1,CNS
+Steganography,1,CNS
+Steganographic techniques,1,CNS
+Hidden message,1,CNS
+Cover medium,1,CNS
+Stego image,1,CNS
+Payload,1,CNS
+Steganalysis,1,CNS
+Covert channel,1,CNS
+Caesar cipher,1,CNS
+Rail Fence cipher,1,CNS
+Polybius Square cipher,1,CNS
+Frequency analysis,1,CNS
+Homomorphic Encryption,1,CNS
+Fully Homomorphic Encryption ,1,CNS
+Partially Homomorphic Encryption ,1,CNS
+Somewhat Homomorphic Encryption ,1,CNS
+Additive Homomorphic Encryption,1,CNS
+Multiplicative Homomorphic Encryption,1,CNS
+Cloud encryption,1,CNS
+security mechanism,1,CNS
+threat to confedentiality,1,CNS
+threat to integrity,1,CNS
+threat to availablity,1,CNS
+attack on CIA,1,CNS
+OSI security architecture,1,CNS
+network security model,1,CNS
+classical encryption,1,CNS
+classical encryption techniques,1,CNS
+monoalphabetic,1,CNS
+monoalphabetic cipher,1,CNS
+polyalphabetic,1,CNS
+polyalphabetic cipher,1,CNS
+transposition techniques,1,CNS
+steganography,1,CNS
+block cipher modes of operation,2,CNS
+modes of operation,2,CNS
+data encryption standard,2,CNS
+DES,2,CNS
+advanced encryption standard,2,CNS
+AES,2,CNS
+block cipher,2,CNS
+key management,2,CNS
+distribution,2,CNS
+user authentication,2,CNS
+public key cryptography,2,CNS
+PKI,2,CNS
+public key interface,2,CNS
+RC5 algorithm,2,CNS
+hashing,2,CNS
+hashing techniques,2,CNS
+SHA256,2,CNS
+SHA-512,2,CNS
+HMAC,2,CNS
+CMAC,2,CNS
+digital signature,2,CNS
+digital signature schemes,2,CNS
+RSA,2,CNS
+DSS,2,CNS
+Remote user Authentication protocol,2,CNS
+Kerberos,2,CNS
+Digital certificate,2,CNS
+X.509,2,CNS
+Electronic Codebook mode,2,CNS
+Cipher Block Chaining mode,2,CNS
+Cipher Feedback  mode,2,CNS
+Output Feedback mode,2,CNS
+Counter mode,2,CNS
+Data Encryption Standard ,2,CNS
+Triple DES ,2,CNS
+Advanced Encryption Standard ,2,CNS
+Key expansion,2,CNS
+SubBytes,2,CNS
+ShiftRows,2,CNS
+MixColumns,2,CNS
+Round key,2,CNS
+ECB,2,CNS
+CBC,2,CNS
+CFB,2,CNS
+OFB,2,CNS
+CTR,2,CNS
+3DES,2,CNS
+Block size,2,CNS
+Key pair,2,CNS
+Key generation,2,CNS
+Hashing Techniques,2,CNS
+SHA256,2,CNS
+SHA512 ,2,CNS
+HMAC ,2,CNS
+CMAC ,2,CNS
+Message Digest,2,CNS
+Collision resistance,2,CNS
+Digital Signature Schemes,2,CNS
+RSA digital signature,2,CNS
+DSS ,2,CNS
+Signing,2,CNS
+Verification,2,CNS
+Remote user Authentication Protocols,2,CNS
+RA,2,CNS
+Ticket-granting Ticket ,2,CNS
+Authentication Server ,2,CNS
+Ticket Granting Server ,2,CNS
+Registration Authority,2,CNS
+CA,2,CNS
+Certificate Authority ,2,CNS
+Certificate Revocation,2,CNS
+ECC,2,CNS
+Elliptical Curve Digital Signature,2,CNS
+Elliptic Curve Cryptography (ECC),2,CNS
+Elliptic Curve Digital Signature Algorithm (ECDSA),2,CNS
+Key size,2,CNS
+Computational efficiency,2,CNS
+Benefits of ECC over RSA,2,CNS
+ECDSA,2,CNS
+malicious,3,CNS
+malicious software,3,CNS
+SPAM,3,CNS
+trojan,3,CNS
+trojan horse,3,CNS
+virus,3,CNS
+worms,3,CNS
+system corruption,3,CNS
+corruption,3,CNS
+attack agent,3,CNS
+information theft,3,CNS
+trapdoor,3,CNS
+keyloggers,3,CNS
+phishing,3,CNS
+backdoor,3,CNS
+rootkit,3,CNS
+DOS,3,CNS
+DDOS,3,CNS
+denial of service,3,CNS
+distributed denial of service,3,CNS
+zombie,3,CNS
+Ransomware,3,CNS
+Spyware,3,CNS
+Adware,3,CNS
+Botnets,3,CNS
+Exploits,3,CNS
+Social Engineering,3,CNS
+Advanced Persistent Threats (APTs),3,CNS
+Cryptojacking,3,CNS
+Fileless Malware,3,CNS
+Polymorphic Malware,3,CNS
+Metamorphic Malware,3,CNS
+Logic Bombs,3,CNS
+Macroviruses,3,CNS
+Boot Sector Viruses,3,CNS
+Multipartite Viruses,3,CNS
+Mobile Malware,3,CNS
+Internet of Things (IoT) Malware,3,CNS
+Man-in-the-Middle (MitM) Attacks,3,CNS
+Spoofing Attacks,3,CNS
+Brute Force Attacks,3,CNS
+Pharming,3,CNS
+RAT (Remote Access Trojan),3,CNS
+Key-based Authentication Attacks,3,CNS
+Session Hijacking,3,CNS
+Drive-by Downloads,3,CNS
+Zero-Day Exploits,3,CNS
+Injection Attacks,3,CNS
+Cross-site Scripting (XSS),3,CNS
+Cross-Site Request Forgery (CSRF),3,CNS
+DNS Cache Poisoning,3,CNS
+ARP Spoofing,3,CNS
+Password Cracking,3,CNS
+Wardriving,3,CNS
+WAP (Wireless Application Protocol) Attacks,3,CNS
+SQL Injection,3,CNS
+Watering Hole Attacks,3,CNS
+File Inclusion Exploits,3,CNS
+Whaling,3,CNS
+Spear Phishing,3,CNS
+Vishing (Voice Phishing),3,CNS
+Evil Twin Attacks,3,CNS
+Malvertising,3,CNS
+IP security,4,CNS
+transport layer security,4,CNS
+email security,4,CNS
+IPSec,4,CNS
+IPSec architecture,4,CNS
+Protection Mechanism,4,CNS
+AH,4,CNS
+ESP,4,CNS
+VPN,4,CNS
+web security sonsiderations,4,CNS
+SSL,4,CNS
+secure socket layer,4,CNS
+secure socket layer architecture,4,CNS
+TLS,4,CNS
+HTTPS,4,CNS
+secure shell,4,CNS
+SSH,4,CNS
+protocol stack,4,CNS
+S/MISE,4,CNS
+secure email,4,CNS
+screen reader support enabled,4,CNS
+PPTP,4,CNS
+IP level Security,4,CNS
+L2TP,4,CNS
+Authentication Header (AH),4,CNS
+Encapsulating Security Payload (ESP),4,CNS
+Internet Key Exchange (IKE),4,CNS
+VPN (Virtual Private Network),4,CNS
+"VPN Protocols (PPTP, L2TP, SSTP, OpenVPN)",4,CNS
+SSTP,4,CNS
+Intrusion Detection System (IDS),4,CNS
+Intrusion Prevention System (IPS),4,CNS
+Network Address Translation (NAT),4,CNS
+Port Forwarding,4,CNS
+Web Security,4,CNS
+Web Application Firewall (WAF),4,CNS
+Cross-Site Scripting (XSS),4,CNS
+OWASP (Open Web Application Security Project),4,CNS
+Content Security Policy (CSP),4,CNS
+PGP,4,CNS
+SSL Handshake,4,CNS
+SSL Certificates,4,CNS
+SSL/TLS Cipher Suites,4,CNS
+Perfect Forward Secrecy (PFS),4,CNS
+HTTP Secure (HTTPS),4,CNS
+TLS 1.2 and TLS 1.3,4,CNS
+Cipher Suite Negotiation,4,CNS
+HSTS (HTTP Strict Transport Security),4,CNS
+Mixed Content,4,CNS
+SSL Stripping,4,CNS
+Secure Shell (SSH) Protocol Stack,4,CNS
+SSH Key-based Authentication,4,CNS
+SSH Tunnelling,4,CNS
+SSH Port Forwarding,4,CNS
+SSH Agent Forwarding,4,CNS
+DKIM,4,CNS
+SPF,4,CNS
+PGP (Pretty Good Privacy),4,CNS
+DKIM (DomainKeys Identified Mail),4,CNS
+SPF (Sender Policy Framework),4,CNS
+"DMARC (Domain-based Message Authentication, Reporting, and Conformance)",4,CNS
+Email Spoofing,4,CNS
+Phishing Emails,4,CNS
+Email Encryption,4,CNS
+Email Digital Signature,4,CNS
+Data Loss Prevention (DLP),4,CNS
+Two-Factor Authentication (2FA),4,CNS
+Multi-Factor Authentication (MFA),4,CNS
+DMARC,4,CNS
+DLP,4,CNS
+2FA,4,CNS
+MFA,4,CNS
+STS,4,CNS
+SSO,4,CNS
+IAM,4,CNS
+Identity and Access Management (IAM),4,CNS
+Security Token Service (STS),4,CNS
+Single Sign-On (SSO),4,CNS
+network access control,5,CNS
+NAC,5,CNS
+principle elements of NAC,5,CNS
+principle NAC reinforcement methods,5,CNS
+how to implement NAC solutions,5,CNS
+use cases for network access control,5,CNS
+Network Management Security,5,CNS
+SNMPv3,5,CNS
+SNMP (Simple Network Management Protocol),5,CNS
+Management Information Base (MIB),5,CNS
+Trap Notifications,5,CNS
+SNMPv3 Security Features,5,CNS
+USM (User-based Security Model),5,CNS
+Access Control,5,CNS
+View-Based Access Control Model (VACM),5,CNS
+NAC (Network Access Control),5,CNS
+Principle Elements of NAC,5,CNS
+Endpoint Identification,5,CNS
+Access Control Enforcement,5,CNS
+Posture Assessment,5,CNS
+Authentication,5,CNS
+Authorization,5,CNS
+Principle NAC Enforcement Methods,5,CNS
+802.1X,5,CNS
+MAC Authentication Bypass (MAB),5,CNS
+Web Authentication,5,CNS
+VPN-Based NAC,5,CNS
+DHCP Snooping,5,CNS
+Dynamic ARP Inspection (DAI),5,CNS
+Implementing NAC Solutions,5,CNS
+Network Segmentation,5,CNS
+Agent-based and Agentless NAC,5,CNS
+Guest Access Management,5,CNS
+"Integration with AAA (Authentication, Authorization, and Accounting) Servers",5,CNS
+Use Cases for Network Access Control,5,CNS
+Guest Wi-Fi Access,5,CNS
+Remote Access Security,5,CNS
+Endpoint Compliance Enforcement,5,CNS
+Open Source Network Management Security Tools,5,CNS
+OpenNMS,5,CNS
+Zabbix,5,CNS
+Cacti,5,CNS
+Nagios,5,CNS
+Observium,5,CNS
+LibreNMS,5,CNS
+Icinga,5,CNS
+Zenoss,5,CNS
+PRTG Network Monitor,5,CNS
+MRTG (Multi Router Traffic Grapher),5,CNS
+Ntop,5,CNS
+RANCID (Really Awesome New Cisco config Differ),5,CNS
+SNMPTrapd,5,CNS
+RRDtool (Round Robin Database Tool),5,CNS
+VACM,5,CNS
+MAB,5,CNS
+DAI,5,CNS
+USM,5,CNS
+IDS,6,CNS
+IPS,6,CNS
+system security,6,CNS
+IDS (Intrusion Detection System),6,CNS
+IPS (Intrusion Prevention System),6,CNS
+Network Security,6,CNS
+Packet Inspection,6,CNS
+Signature-based IDS/IPS,6,CNS
+Anomaly-based IDS/IPS,6,CNS
+Behavior-based IDS/IPS,6,CNS
+Host-based IDS/IPS,6,CNS
+Network-based IDS/IPS,6,CNS
+Firewall,6,CNS
+Firewall Design Principles,6,CNS
+Firewall Characteristics,6,CNS
+Stateful Inspection,6,CNS
+Packet Filtering,6,CNS
+Proxy Firewall,6,CNS
+Application-layer Firewall,6,CNS
+Circuit-level Firewall,6,CNS
+Personal Firewall,6,CNS
+Next-Generation Firewall (NGFW),6,CNS
+Unified Threat Management (UTM),6,CNS
+Deep Packet Inspection (DPI),6,CNS
+Ingress Filtering,6,CNS
+Egress Filtering,6,CNS
+Firewall Rules,6,CNS
+Firewall Rule Table,6,CNS
+Rule-based Firewall,6,CNS
+Port Forwarding,6,CNS
+Static Packet Filtering,6,CNS
+Dynamic Packet Filtering,6,CNS
+Stateful Firewall,6,CNS
+Stateless Firewall,6,CNS
+Layer 2 Firewall,6,CNS
+Layer 3 Firewall,6,CNS
+Layer 4 Firewall,6,CNS
+Application Firewall,6,CNS
+Proxy Server,6,CNS
+Reverse Proxy,6,CNS
+Transparent Proxy,6,CNS
+Content Filtering,6,CNS
+URL Filtering,6,CNS
+Web Application Firewall (WAF),6,CNS
+Zone-based Firewall,6,CNS
+Context-based Access Control (CBAC),6,CNS
+Firewall Policy,6,CNS
+Firewall Management,6,CNS
+Firewall Logging,6,CNS
+Firewall Alerts,6,CNS
+Firewall Bypass,6,CNS
+Firewall Failover,6,CNS
+Firewall Redundancy,6,CNS
+Intrusion Detection,6,CNS
+Intrusion Prevention,6,CNS
+Incident Response,6,CNS
+Security Information and Event Management (SIEM),6,CNS
+Security Policy,6,CNS
+Security Audit,6,CNS
+Vulnerability Assessment,6,CNS
+Penetration Testing,6,CNS
+Threat Intelligence,6,CNS
+Security Operations Center (SOC),6,CNS
+A secure e-voting system is to be designed. Discuss the security goals that must met and enlist mechanisms for the same.,1,CNS
+Explain principle elements of NAC,5,CNS
+Enlist properties and application of hash function.,2,CNS
+Describe different types of Denial of service attacks,3,CNS
+Explain the need of Network Access Control in Enterprise Networks. Explain the major NAC enforcement methods.,5,CNS
+How is security achieved in the transport and tunnel modes of IPSEC? Describe the role of AH and ESP.,4,CNS
+Define Malware. Explain its types in detail,3,CNS
+Explain Firewall & its types along with advantages and disadvantages.,6,CNS
+Explain different modes of operation of Block ciphers,2,CNS
+Explain classical encryption techniques with example.,1,CNS
+"In an RSA system, given N = 91e = 5 Calculate O(n),p, q and private key d. What is the cipher text when you encrypt 
+message m = 25 using the public key. Also perform decryption.",2,CNS
+Write Short Notes on: SSL protocol stack,4,CNS
+Write Short Notes on: Compare and contrast AES and DES,2,CNS
+Write Short Notes on: IDS and its types,6,CNS
+Write Short Notes on: Use cases for NAC,5,CNS
+Write Short Notes on: Digital Signature,2,CNS
+What is the drawback of Double DES algorithm? How is it overcome by Triple DES?,2,CNS
+What is the significance of a digital signature on a certificate? Justify,2,CNS
+"Encrypt ""This is the final exam"" with Playfair cipher using key ""Guidance"". Explain the steps involved.",1,CNS
+"Two uses wish to establish a secure communication channel and exchange a session key after mutual authentication. 
+Show how this can be done with the help of a KDC.",2,CNS
+"Given modulus n=221 and public key, e-7, find the values of p, q, phi(n), and d using RSA. Encrypt M-5.",2,CNS
+Define DOS attack. Show the different ways by which this attack can be mounted at various layers,3,CNS
+Show how Kerberous protocol can be used to achieve single sing-on oindistributed system,2,CNS
+Write short notes on: Email security,4,CNS
+How does IPSec help to achieve authentication and confidentiality? Justify the noad of AL and ESD,4,CNS
+Write short note on eavesdropping.,1,CNS
+Write short note on Stenography.,1,CNS
+List S/MIME services,4,CNS
+Explain Transposition Ciphers with illustrative Example.,1,CNS
+"Perform encryption and decryption using RSA algorithm with p=7,q-11,e-17 and M=8.",2,CNS
+,2,CNS
+,,
+starting,1,EEB
+evolution,1,EEB
+evolution of enterpreneur,1,EEB
+role of enterpreneur,1,EEB
+role of enterpreneur in economical development,1,EEB
+creating new jobs,1,EEB
+qualities of enterpreneur,1,EEB
+characteristrics of enterpreneur,1,EEB
+vision,1,EEB
+creativity,1,EEB
+discipline,1,EEB
+risk taking,1,EEB
+vision for oppourtunities,1,EEB
+manager,1,EEB
+innovative,1,EEB
+innovative enterpreneur,1,EEB
+startup,1,EEB
+startup enterpreneur,1,EEB
+small business,1,EEB
+small business enterpreneur,1,EEB
+large company,1,EEB
+social enterpreneur,1,EEB
+international enterpreneur,1,EEB
+environmental enterpreneur,1,EEB
+techno enterpreneur,1,EEB
+case study,1,EEB
+primary reseearch,1,EEB
+secondary research,1,EEB
+Managerial vs entrepreneurial approach,1,EEB
+Classification and types of Entrepreneurs,1,EEB
+Characteristics and qualities of successful Entrepreneurs,1,EEB
+Women Entrepreneurs,1,EEB
+corporate enterpreneur,1,EEB
+Entrepreneurial Motivation,2,EEB
+motivating factors,2,EEB
+Types of startups,2,EEB
+Characteristics of entrepreneurial leadership,2,EEB
+Factors influencing entrepreneurial development and motivation,2,EEB
+Entrepreneurial Opportunities and challenges,2,EEB
+Entrepreneurship process,2,EEB
+Types of Enterprises,2,EEB
+Ownership Structure,2,EEB
+small scale,2,EEB
+small scale enterprises,2,EEB
+medium scale,2,EEB
+medium scale enterprises,2,EEB
+large scale,2,EEB
+large scale enterprises,2,EEB
+Meaning and definition (evolution),2,EEB
+role of small enterprises in economic development,2,EEB
+proprietorship,2,EEB
+Policies governing SMEs,2,EEB
+partnership,2,EEB
+Ltd. companies,2,EEB
+co-operatives,2,EEB
+co-operatives: their formation,2,EEB
+capital structure,2,EEB
+source of finance,2,EEB
+Entrepreneu rship Developme nt and Leadership,2,EEB
+Methods to Initiate Ventures,3,EEB
+Initiare Venture,3,EEB
+venture,3,EEB
+new venture planning,3,EEB
+Acquisition,3,EEB
+Advantages of acquiring an ongoing venture,3,EEB
+examination of key issues,3,EEB
+Developing a Marketing plan-customer analysis,3,EEB
+Marketing plan-customer analysis,3,EEB
+sales analysis,3,EEB
+competition analysis,3,EEB
+Business Plan-benefits,3,EEB
+Business Plan-benefits of drivers,3,EEB
+perspectives in business plan preparation,3,EEB
+elements of a business plan,3,EEB
+Business plan failures,3,EEB
+Financing,4,EEB
+Financing & Managing Venture,4,EEB
+Financing Stages,4,EEB
+Sources of Finance,4,EEB
+Venture Capital,4,EEB
+Criteria for evaluating new-venture proposals,4,EEB
+new-venture proposals,4,EEB
+Capital-process,4,EEB
+Management of venture,4,EEB
+objectives and functions of management,4,EEB
+scientific management,4,EEB
+general and strategic management,4,EEB
+introduction to human resource management,4,EEB
+human resource management,4,EEB
+planning,4,EEB
+job analysis,4,EEB
+training,4,EEB
+recruitment and selection,4,EEB
+E ñ business,5,EEB
+Concept of E-business,5,EEB
+Business Success,5,EEB
+Business Success through adoption of technology,5,EEB
+information management,5,EEB
+information management for business Initiatives,5,EEB
+Performance improvement,5,EEB
+Performance improvement through e-business,5,EEB
+various collaborative partnerships,5,EEB
+E-commerce,5,EEB
+Sectors of E commerce,5,EEB
+B to C,5,EEB
+B to B,5,EEB
+C to C,5,EEB
+E-commerce success factors,5,EEB
+clicks and Bricks in ecommerce,5,EEB
+collaborative commerce,5,EEB
+E-Marketplace,5,EEB
+M-commerce,5,EEB
+E-Government,5,EEB
+Various E-business Models,5,EEB
+E-business Models,5,EEB
+Challenges of the E-Business Models,5,EEB
+Globalization of E-business,5,EEB
+Strategic Initiatives,6,EEB
+Strategic Initiatives for Technology,6,EEB
+Customer Relationship Management,6,EEB
+The evolution of CRM,6,EEB
+functional areas of CRM,6,EEB
+contemporary trends,6,EEB
+CRM,6,EEB
+SRM,6,EEB
+PRM,6,EEB
+ERM,6,EEB
+Future Trends of CRM,6,EEB
+Enterprise Resource Planning,6,EEB
+Core and Extended ERP,6,EEB
+components of ERP system,6,EEB
+Benefits and Risks of ERP implementation,6,EEB
+ERP,6,EEB
+Supply Chain Management,6,EEB
+characteristics of SCM,6,EEB
+SCM,6,EEB
+Elements of SCM,6,EEB
+Push & Pull supply chain model,6,EEB
+Use of e-business to restructure supply chain,6,EEB
+Supply chain management implementation,6,EEB
+Procurement,6,EEB
+e ñprocurement,6,EEB
+Types& Drivers of e- procurement,6,EEB
+Components of e-procurement system,6,EEB
+Implementation of e-procurement system,6,EEB
+SEM,6,EEB
+SEM E-CRM,6,EEB
+,,
+Introduction to Software Engineering,1,SE
+Nature of Software,1,SE
+Software Process,1,SE
+Capability Maturity Model (CMM),1,SE
+CMM,1,SE
+Generic Process Model,1,SE
+Prescriptive Process Models,1,SE
+The Waterfall Model,1,SE
+V-model,1,SE
+Incremental Process Models,1,SE
+Evolutionary Process Models,1,SE
+Concurrent Models,1,SE
+Agile process,1,SE
+Agility Principles,1,SE
+Extreme Programming (XP),1,SE
+XP,1,SE
+Scrum,1,SE
+Kanban,1,SE
+personal model,2,SE
+team process model,2,SE
+Requirement Analysis,2,SE
+Software Requirements,2,SE
+non-functional,2,SE
+Functional,2,SE
+Functional & non-functional,2,SE
+user-system requirement,2,SE
+user requirement,2,SE
+system requirement,2,SE
+engineering process,2,SE
+feasibility studies,2,SE
+elicitation,2,SE
+validation & management,2,SE
+software prototyping,2,SE
+S/W documentation,2,SE
+software documentation,2,SE
+Analysis and modelling,2,SE
+Requirement Elicitation,2,SE
+Software requirement specification (SRS),2,SE
+SRS,2,SE
+prioritizing requirements,3,SE
+Kano diagram,3,SE
+Software Estimation,3,SE
+Software Scheduling,3,SE
+Software Estimation and Scheduling,3,SE
+Management Spectrum,3,SE
+"3Ps (people, product and process)",3,SE
+4Ps,3,SE
+people,3,SE
+product,3,SE
+process,3,SE
+project,3,SE
+Process and Project metrics,3,SE
+Process metrics,3,SE
+Project metrics,3,SE
+Software Project Estimation,3,SE
+LOC,3,SE
+FP,3,SE
+function point,3,SE
+Empirical Estimation Models,3,SE
+COCOMO,3,SE
+COCOMO II model,3,SE
+Specialized Estimation Techniques,3,SE
+Object based estimation,3,SE
+use-case based estimation,3,SE
+Project scheduling,3,SE
+Defining a Task Set for the Software Project,3,SE
+task set,3,SE
+Timeline charts,3,SE
+Tracking the Schedule,3,SE
+Earned Value Analysis,3,SE
+Cost Estimation Tools,3,SE
+Cost Estimation Techniques,3,SE
+Typical Problems with IT Cost Estimates,4,SE
+IT Cost Estimates,4,SE
+Design Engineering,4,SE
+Design,4,SE
+Design Process,4,SE
+Design Quality,4,SE
+Design Concepts,4,SE
+The design Model,4,SE
+Pattern-based Software Design,4,SE
+"4.2 Architectural 
+Design",4,SE
+Architectural Design,4,SE
+Design Decisions,4,SE
+Views,4,SE
+Patterns,4,SE
+Application Architectures,4,SE
+Modelling,4,SE
+Component level design,4,SE
+Designing class,4,SE
+Designing class based components,4,SE
+conducting component level design,4,SE
+User Interface Design,4,SE
+The golden rules,4,SE
+Interface design steps,4,SE
+Interface design analysis,4,SE
+Refinement aspects,4,SE
+Refinement,5,SE
+Refactoring,5,SE
+Software risk,5,SE
+risk,5,SE
+Software configuration,5,SE
+configuration,5,SE
+risk identification,5,SE
+risk assessment,5,SE
+risk projection,5,SE
+RMMM,5,SE
+software configuration management,5,SE
+SCM,5,SE
+SCM repositories,5,SE
+SCM process,5,SE
+Software quality assurance,5,SE
+quality assurance,5,SE
+quality assurance task,5,SE
+quality assurance plan,5,SE
+metrics,5,SE
+software reliablity,5,SE
+FTR,5,SE
+formal technical review,5,SE
+walkthrough,6,SE
+Configuration management for WebApps,6,SE
+Software testing,6,SE
+Software maintainance,6,SE
+software quality testing,6,SE
+strategic approach,6,SE
+strategic issues,6,SE
+Strategies for Conventional Software,6,SE
+object oriented software,6,SE
+web app validating resting,6,SE
+web app system testing,6,SE
+art of debugging,6,SE
+software support,6,SE
+software supportablity,6,SE
+Reingeenering,6,SE
+business process Reingeenering,6,SE
+software Reingeenering,6,SE
+Reverse engineering,6,SE
+forward engineering,6,SE
+restructuring,1,SE
+test strategies for web-apps,6,SE
+Is agile process suitable for large scale projects? Mention few issues.,6,SE
+Explain process framework. Mention SQA activities.,1,SE
+Explain SQA activities,5,SE
+Explain CMM level 4 and level 5,3,SE
+Mention the reasons for project delay. What are the risks associated with project delay?,1,SE
+Estimate the effort using function point method to design a user interface for the public to report about damaged pothole. Assume suitable input complexity and justify your assumptions.,2,SE
+Explain in detail Spiral model and compare it with component model.,3,SE
+Prepare SRS for the Course Management Systein.,3,SE
+List down the activities requited for scheduling and tracking software projects,6,SE
+"Draw use case, sequence diagram (withdrawal) for ATM banking system",4,SE
+Describe in detail white box techniques,1,SE
+"In a car service station, complaints are taken and an estimate of the work is given immediately Resources re assigned to the job. Once repaired a bill is prepared for actual cost. Prepare a DFD up to level 2 dictionary",1,SE
+Difference between prescriptive and evolutionary models.,6,SE
+Explain SCRUM.,6,SE
+Explain the need for system testing.,5,SE
+Mention SQA activities.,1,SE
+What are the risks associated with software projects? How do project managers manage such risks,5,SE
+Explain in detail Spiral model and compare it with component model.,2,SE
+Explain architectural design for e-Commerce†System,6,SE
+Prepare SRS for railway reservation system.,5,SE
+Describe in detail white box techniques,4,SE
+Explain how change control and version control are carried out in SCM.,2,SE
+Draw DFD up to level 2 for order processing†system.,2,SE
+Aspect oriented development,2,SE
+OO testing,1,SE
+Process and†project†metrics,1,SE
+Explain CMM,1,SE
+Give difference between Waterfall and Prototype Model,6,SE
+List Software Engineering Practice core Principles.,1,SE
+"Explain following design concepts: Abstraction, Modularity",4,SE
+What is agility? Explain XP,6,SE
+What is Design? Explain Design Principles,1,SE
+Explain testing strategies,6,SE
+How important is requirement analysis. Elaborate on different requirement for engineering†tasks,4,SE
+"Explain Refinement, Refactoring and design classes.",5,SE
+Explain Coupling and Cohesion. What is preferred in the component? Why?,6,SE
+Identity risk of completing graduation with good marks but without knowledge,4,SE
+Explain software quality attributes Explain change management†process,1,SE
+"For the given Order processing system scenario draw DFD level 9, 1and 2. The 10 customer can place order",1,SE
+What are the different levels of Capability Maturity Model (CMM)?,4,SE
+Compare agile and traditional Software Development models.,5,SE
+What are the different probable Origins of changes that are requested for software,1,SE
+"With suitable examples, explain the differences between 'known risks' and predictable",1,SE
+Explain waterfall model give its advantage and disadvantages,6,SE
+List evolutionary models and explain any one in detall,5,SE
+"Draw the DFD up to Level 2 for a Restaurant Management System which has food ordering, food delivering,",4,SE
+What are different requirements engineering tasks? Why identifying software requirements difficult,6,SE
+Explain software†design†concepts,1,SE
+What are different attributes of software quality?,1,SE
+Define Software Engineering and explain Software Process Framework,1,SE
+What is CMM? Explain its different levels,4,SE
+What is agile development? What are its advantages,1,SE
+What is the role of analysis and design in software development,4,SE
+"What is Prescriptive Model? Explain Waterfall and Incremental Model, How are they different",1,SE
+Explain Component based model and formal methods model,1,SE
+What is agility? Explain its principles,1,SE
+Explain XP,6,SE
+Explain core principles of Software Engineering Practice,6,SE
+Explain design concepts in brief,5,SE
+Explain quality guidelines and quality attributes of†software†design,1,SE
+Define Risk. Identify two risks for your final year examination and prepare†RMMM†plan,1,SE
+Explain software process framework,6,SE
+Elaborate on principles that guide process and practice,1,SE
+What is metric? Exlain project and process metrics,1,SE
+What is evolutionary model? Compare prototype and spiral model,1,SE
+Explain agility principles. Explain XP agile development proces,2,SE
+What is the need of creating models? Explain mod,6,SE
+Explain requirements engineering activities.,6,SE
+What is quality? Explain McCall's Quality Factors.,5,SE
+List six quality attributes†for†ISO†9126,4,SE
+Identify three risks associated with your final year project. Perform risk assessment and prepare RMMM plan.,1,SE
+List any five configuration items produced during SDLC. Explain change†control†process,1,SE
+What is the difference between Prescriptive & Evolutionary model?,6,SE
+List & Elaborate Software Engineering Practice core principles.,3,SE
+Explain following design Concepts: Abstraction & Modularity.,1,SE
+Explain different metrics for size estimation with their advantages and disadvantages,2,SE
+Explain Agile methodology with XP Agile Development Process.,4,SE
+What is the importance of Requirement Analysis? Explain different Requirement Engineering tasks,1,SE
+Explain how Change Control & Version Control are carried out in Software Configuration,5,SE
+"What is Evolutionary model? p among scope, schedule and budget. volutionary models. Explain any one in detail.",1,SE
+Risks? with software Projects? How do Project Managers manage such question,1,SE
+What is CMMI?How it is different from CMM. Explain all†levels†of†CMML,1,SE
+Explain Evolutionary process model?,6,SE
+Discuss about the principles of user interface design steps?,3,SE
+Explain Mc Calls Quality factors?,1,SE
+Short note on Process Metrics and project metrics.,3,SE
+What is agility? Explain Kanban model,4,SE
+Explain feasibility studies in detail.,5,SE
+Explain different architectural styles?,6,SE
+Explain Risk assessment and Risk Projection.,5,SE
+Explain in details Reengineering and reverse engineering,2,SE
+What is SCM? Explain SCM Repositories.,6,SE
+Explain requirement elicitation in detai,6,SE
+Explain different types of coupling and cohesion.,3,SE
+Explain in detail software testing†strategies.,,
+Compute the function point value for a project with the following information,,
+,,
+Time complexity,1,ADSA
+Space complexity,1,ADSA
+Asymptotic analysis,1,ADSA
+Asymptotic,1,ADSA
+asymptotic,1,ADSA
+Big O notation,1,ADSA
+Big O,1,ADSA
+Big Theta,1,ADSA
+Big Omega,1,ADSA
+Omega notation,1,ADSA
+Omega,1,ADSA
+Theta notation,1,ADSA
+Theta,1,ADSA
+Average case analysis,1,ADSA
+Average case,1,ADSA
+Worst-case analysis,1,ADSA
+Worst-case,1,ADSA
+Recurrence relations,1,ADSA
+Recurrence,1,ADSA
+Substitution method,1,ADSA
+Substitution,1,ADSA
+Recursive tree method,1,ADSA
+Recursive tree,1,ADSA
+Master's theorem,1,ADSA
+Master,1,ADSA
+Iterative algorithms,1,ADSA
+Recursive algorithms,1,ADSA
+Algorithm analysis,1,ADSA
+Algorithm complexity,1,ADSA
+Algorithm performance,1,ADSA
+Data structures,1,ADSA
+Space-time tradeoff,1,ADSA
+Complexity classes,1,ADSA
+O(n),1,ADSA
+T(n),1,ADSA
+T(n) = T(n/2) + 1,1,ADSA
+T(n) = T(n/2) + n,1,ADSA
+Red-Black Trees,2,ADSA
+red black,2,ADSA
+red-black,2,ADSA
+Red-Black tree properties,2,ADSA
+Red-Black tree insertion,2,ADSA
+Red-Black tree deletion,2,ADSA
+Heap,2,ADSA
+Binary heap,2,ADSA
+Min-heap,2,ADSA
+min heap,2,ADSA
+Max-heap,2,ADSA
+max heap,2,ADSA
+Heap operations,2,ADSA
+Heapify,2,ADSA
+Percolate,2,ADSA
+percolate up,2,ADSA
+percolate down,2,ADSA
+Heap insertion,2,ADSA
+Heap deletion,2,ADSA
+Binary heap,2,ADSA
+Heapify-up,2,ADSA
+Heapify up,2,ADSA
+Heapify-down,2,ADSA
+Heapify down,2,ADSA
+Priority queue,2,ADSA
+Priority queue using heap,2,ADSA
+Priority queue operations,2,ADSA
+Topological Sort,2,ADSA
+Directed Acyclic Graph,2,ADSA
+DAG,2,ADSA
+Directed Acyclic Graph(DAG),2,ADSA
+Topological ordering,2,ADSA
+Topological sorting algorithm,2,ADSA
+Dependency resolution,2,ADSA
+Topology Graph traversal,2,ADSA
+B/B+ tree,2,ADSA
+B,2,ADSA
+B+,2,ADSA
+B tree,2,ADSA
+B+ tree,2,ADSA
+B-tree properties,2,ADSA
+B+ tree properties,2,ADSA
+B-tree insertion,2,ADSA
+B+ tree insertion,2,ADSA
+B-tree deletion,2,ADSA
+B+ tree deletion,2,ADSA
+B-tree node split,2,ADSA
+B+ tree node split,2,ADSA
+B-tree node merge,2,ADSA
+B+ tree node merge,2,ADSA
+B-tree search,2,ADSA
+B+ tree search,2,ADSA
+Red-Black Trees,2,ADSA
+Red-Black tree rotations,2,ADSA
+Red-Black tree balancing,2,ADSA
+Heap operations,2,ADSA
+Heap sort,2,ADSA
+Heap-based priority queue,2,ADSA
+Topological ordering,2,ADSA
+Topological sorting algorithm,2,ADSA
+Dependency resolution,2,ADSA
+Topological sort applications,2,ADSA
+Critical path analysis,2,ADSA
+Divide,3,ADSA
+Conquer,3,ADSA
+Divide and conquer,3,ADSA
+Divide and conquer algorithm,3,ADSA
+Analysis of algorithms,3,ADSA
+Binary Search,3,ADSA
+Binary Search analysis,3,ADSA
+Binary Search time complexity,3,ADSA
+Ternary Search,3,ADSA
+Merge sort,3,ADSA
+Merge function,3,ADSA
+Merge,3,ADSA
+Merge sort analysis,3,ADSA
+Merge sort time complexity,3,ADSA
+Quick sort,3,ADSA
+Pivot,3,ADSA
+Pivot element,3,ADSA
+Quick sort analysis,3,ADSA
+Quick sort time complexity,3,ADSA
+min amd max,3,ADSA
+max and min,3,ADSA
+minimum and maximum,3,ADSA
+maximum and minimum,3,ADSA
+Finding minimum and maximum algorithm,3,ADSA
+Divide and conquer algorithms analysis,3,ADSA
+Greedy Algorithms,3,ADSA
+Greedy algorithm design,3,ADSA
+Knapsack Problem,3,ADSA
+fractional Knapsack,3,ADSA
+fractional,3,ADSA
+Knapsack algorithm,3,ADSA
+Greedy Knapsack solution,3,ADSA
+Job sequencing using deadlines,3,ADSA
+deadline,3,ADSA
+job,3,ADSA
+job sequenceing,3,ADSA
+Greedy job scheduling,3,ADSA
+Optimal storage,3,ADSA
+tape,3,ADSA
+disk,3,ADSA
+Optimal storage on tape,3,ADSA
+Greedy tape storage,3,ADSA
+Optimal Merge Pattern,3,ADSA
+Greedy merge pattern,3,ADSA
+Greedy algorithm analysis,3,ADSA
+Algorithmic problem solving,3,ADSA
+Minimum and maximum algorithm implementation,3,ADSA
+Knapsack problem solution,3,ADSA
+Job sequencing implementation,3,ADSA
+profit,3,ADSA
+value,3,ADSA
+cost,3,ADSA
+dynamic,4,ADSA
+Dynamic Algorithms,4,ADSA
+Dynamic programming,4,ADSA
+Introduction to dynamic programming,4,ADSA
+Dynamic programming concepts,4,ADSA
+Dynamic programming approach,4,ADSA
+Dynamic programming paradigm,4,ADSA
+Optimal substructure,4,ADSA
+Overlapping subproblems,4,ADSA
+Overlapping,4,ADSA
+Memoization,4,ADSA
+Tabulation,4,ADSA
+All pair shortest path,4,ADSA
+pair shortest path,4,ADSA
+Floyd-Warshall algorithm,4,ADSA
+Floyd-Warshall,4,ADSA
+Floyd Warshall,4,ADSA
+Floyd,4,ADSA
+Warshall,4,ADSA
+FW,4,ADSA
+Dijkstra's algorithm,4,ADSA
+Bellman-Ford algorithm,4,ADSA
+Shortest path algorithms,4,ADSA
+0/1 knapsack,4,ADSA
+0/1,4,ADSA
+Dynamic knapsack solution,4,ADSA
+Dynamic knapsack,4,ADSA
+Travelling salesman problem,4,ADSA
+Travelling salesman,4,ADSA
+salesman,4,ADSA
+TSP,4,ADSA
+TSP algorithm,4,ADSA
+TSP heuristic,4,ADSA
+Nearest neighbor algorithm,4,ADSA
+Nearest neighbor,4,ADSA
+Dynamic programming TSP solution,4,ADSA
+Matrix Chain Multiplication,4,ADSA
+matrix chain,4,ADSA
+Matrix,4,ADSA
+Matrix chain multiplication algorithm,4,ADSA
+Dynamic programming matrix multiplication,4,ADSA
+Optimal binary search tree,4,ADSA
+Optimal BST,4,ADSA
+OBST algorithm,4,ADSA
+OBST,4,ADSA
+Dynamic programming OBST solution,4,ADSA
+Algorithmic problem solving,4,ADSA
+Problem-solving techniques,4,ADSA
+Dynamic programming coding,4,ADSA
+Dynamic programming examples,4,ADSA
+code optimization,4,ADSA
+Dynamic programming patterns,4,ADSA
+Algorithmic optimization,4,ADSA
+Algorithmic strategies,4,ADSA
+Recursive algorithms,4,ADSA
+Dynamic programming recursion,4,ADSA
+Dynamic programming iteration,4,ADSA
+string,5,ADSA
+string matching,5,ADSA
+String matching algorithms,5,ADSA
+Na√Øve string matching,5,ADSA
+Naive string matching,5,ADSA
+Na√Øve,5,ADSA
+Naive,5,ADSA
+Naive string,5,ADSA
+Rabin-Karp algorithm,5,ADSA
+Rabin-Karp,5,ADSA
+Rabin Karp,5,ADSA
+Boyer-Moore algorithm,5,ADSA
+Boyer-Moore,5,ADSA
+Boyer Moore,5,ADSA
+Knuth-Morris-Pratt algorithm,5,ADSA
+Knuth-Morris-Pratt,5,ADSA
+Knuth Morris Pratt,5,ADSA
+KMP,5,ADSA
+String searching algorithms,5,ADSA
+Pattern matching,5,ADSA
+String pattern matching,5,ADSA
+String algorithms,5,ADSA
+Algorithmic pattern matching,5,ADSA
+String matching techniques,5,ADSA
+Longest Common Subsequence(LCS),5,ADSA
+Longest Common Subsequence,5,ADSA
+LCS,5,ADSA
+Common Subsequence,5,ADSA
+LCS algorithm,5,ADSA
+Dynamic programming LCS,5,ADSA
+LCS applications,5,ADSA
+Text comparison,5,ADSA
+Text alignment,5,ADSA
+sequence,5,ADSA
+Sequence alignment,5,ADSA
+Substring matching,5,ADSA
+Implementation of Rabin-Karp algorithm,5,ADSA
+Rabin-Karp algorithm coding,5,ADSA
+Rabin-Karp implementation,5,ADSA
+Pattern rolling hash,5,ADSA
+Implementation of Knuth-Morris-Pratt algorithm,5,ADSA
+KMP algorithm coding,5,ADSA
+KMP implementation,5,ADSA
+Prefix function,5,ADSA
+Failure function,5,ADSA
+Implementation of Longest Common Subsequence (LCS),5,ADSA
+LCS dynamic programming,5,ADSA
+LCS implementation,5,ADSA
+Pattern preprocessing,5,ADSA
+Pattern searching,5,ADSA
+pattern,5,ADSA
+Algorithm performance,5,ADSA
+Text processing algorithms,5,ADSA
+String manipulation,5,ADSA
+String comparison,5,ADSA
+Substring searching,5,ADSA
+Substring,5,ADSA
+Optimization Algorithms,6,ADSA
+Genetic algorithm (GA),6,ADSA
+Genetic algorithm,6,ADSA
+GA,6,ADSA
+Genetic algorithm optimization,6,ADSA
+Genetic algorithm components,6,ADSA
+Genetic algorithm operators,6,ADSA
+Genetic algorithm crossover,6,ADSA
+Genetic algorithm mutation,6,ADSA
+Genetic algorithm selection,6,ADSA
+Genetic algorithm fitness function,6,ADSA
+Approximation Algorithms,6,ADSA
+Vertex-cover problem,6,ADSA
+Vertex-cover,6,ADSA
+Vertex cover,6,ADSA
+Vertex-cover algorithm,6,ADSA
+Approximation algorithms overview,6,ADSA
+Approximation ratio,6,ADSA
+Greedy approximation algorithm,6,ADSA
+Parallel Computing Algorithms,6,ADSA
+Parallel Computing,6,ADSA
+Fast Fourier Transform (FFT),6,ADSA
+Fast Fourier Transform,6,ADSA
+FFT,6,ADSA
+Parallel FFT implementation,6,ADSA
+Parallel computing concepts,6,ADSA
+Parallel algorithm design,6,ADSA
+NP-Hard and NP-Complete Problems,6,ADSA
+NP-Hard problems,6,ADSA
+NP-Hard,6,ADSA
+NP Hard,6,ADSA
+NP-Complete,6,ADSA
+NP Complete,6,ADSA
+NP-Complete Problems,6,ADSA
+classes,6,ADSA
+Reduction techniques,6,ADSA
+Cook's theorem,6,ADSA
+Implementation of Genetic algorithm,6,ADSA
+Genetic algorithm coding,6,ADSA
+Genetic algorithm parameters,6,ADSA
+Genetic algorithm optimization,6,ADSA
+Genetic algorithm implementation details,6,ADSA
+Implementation of Vertex-cover problem,6,ADSA
+Vertex-cover algorithm coding,6,ADSA
+NP-Hard problem implementation,6,ADSA
+NP-Complete problem solution,6,ADSA
+Parallel algorithm design,6,ADSA
+Parallel computing concepts,6,ADSA
+Parallel algorithm optimization,6,ADSA
+,,
+,,
+Explain with example how divide and conquer strategy is in Binary Search?,5,ADSA
+Explain flow shop scheduling technique,5,ADSA
+Write a note on AVL tree,5,ADSA
+Write an algorithm for finding maximum and minimum number from given set,5,ADSA
+"What is common longest subsequence problem? Find LCS for following string 
+X=ACBAED,
+Y= ABCABE",10,ADSA
+Which are the different methods of solving recurrences? Explain with examples,10,ADSA
+Compare greedy and dynamic programming approach for an algorithm design. Explain how both can be used to solve knapsack problem,10,ADSA
+Explain Huffman algorithm. Construct Huffman tree for MAHARASHTRA with its optimal code,10,ADSA
+"Explain job sequencing with deadlines. Let n = 4, (p1,p2,p3,p4) = (100,10,15,27) and (d1,d2,d3,d4) = (2,1,2,1). Find optimal solution.",10,ADSA
+Sort the following number using quick sort. Also derive time complexity of quick sort. 27 10 36 18 25 45,10,ADSA
+"Given a chain of four matrices A1,A2,A3,A4 with P0=5, P1=4, P2=6, P3=2, P4 = 7. Find m[1,4] using matrix chain multiplication.",10,ADSA
+Short note on : Rabin Karp Algorithm,10,ADSA
+Short note on : Topological Sort,10,ADSA
+Short note on : Knuth-Morrie-Pratt Algorithm,10,ADSA
+Short note on : Red Black Tree,10,ADSA
+"Compute worst case complexity for 
+void fun(int n, int arr[]){ 
+int i = 0, j = 0; 
+for(; i < n; ++i) 
+while(j < n && arr[i] < arr[j]) 
+j++; 
+}",5,ADSA
+Differentiate between greedy method and dynamic programming.,5,ADSA
+What is optimal huffman code for the frequencies a:1 b:1 c:2 d:3 e:5 f:8 g:13 h:21,5,ADSA
+"Find longest common subsequence 
+String x= ACBAED
+String y =ABCABE",5,ADSA
+"Consider knapsack problem where n=6 m= 15 and profits are (p1,p2,p3,p4,p5,p6) = (1,2,4,4,7,2) and weights are (w1,w2,w3,w4,w5,w6) = 10,5,4,2,7,3. Find maximum profit using fractional knapsack",10,ADSA
+Explain divide and conquer approach. Write a recursive algorithm to determine the max and min from given elements.,10,ADSA
+"Define AVL tree. Construct AVL tree for the following : 21,26,30,9,4,14,28,18,15,10,2,3,7",10,ADSA
+What is optimal binary search tree? Explain with the help of example.,10,ADSA
+"Give asymptotic upper bound for T(n) for the following recurrences and verify your answer using Masters theorem:
+T (n) = T (n-1)+ n
+",10,ADSA
+"Given a set of 9 jobs (J1,J2,J3,J4,J5,J6,J7,J8,J9) where each job has a deadline (5,4,3,3,4,5,2,3,7) and profit (85,25,16,40,55,19,92,80,15) associated to it Each job takes I unit of time to complete and only one job can be scheduled at a time. We earn the profit if and only if the job is completed by its deadline. The task is to find the maximum profit and the number of jobs done.",10,ADSA
+Explain Rabin Karp Algorithm,10,ADSA
+Explain Genetic Algorithm,10,ADSA
+Explain Minimum Cost Spanning Tree,10,ADSA
+Explain Red†Black†Trees,10,ADSA
+Differentiate between Greedy method and Dynamic Programming.,5,ADSA
+Write an algorithm for finding minimum and maximum number from a given set,5,ADSA
+Explain coin changing problem,5,ADSA
+Explain Flow Shop Scheduling Technique,5,ADSA
+"Define AVL tree. Construct an AVL tree for the following data.
+63, 9, 19, 27, 18, 108, 99, 81
+",10,ADSA
+"Write an algorithm for implementing Quick sort. Also, comment on its complexity.",10,ADSA
+"What is longest common subsequence problem? Find LCS for the following string:
+
+String X: ABCDGH
+
+String Y: AEDFHR",10,ADSA
+Explain Rabin Karp Algorithm†in†detail,10,ADSA
+Which are the different methods of solving recurrences? Explain with suitable examples,10,ADSA
+Explain Travelling Salesman Problem with an example.,10,ADSA
+Explain Huffman Algorithm. Construct a Huffman Tree and find Huffman code for the message: KARNATAKA,10,ADSA
+Explain Knapsack Problem with an example.,10,ADSA
+Write Short note on Genetic Algorithm,5,ADSA
+Write Short note on Red and Black Tree,5,ADSA
+Write Short note on Merge Sort,5,ADSA
+Write Short note on Knuth Morris Pratt Algorithm,5,ADSA
+Write Short note on Optimal Binary Search†Tree†(OBST),5,ADSA
+Write and Explain binary search algorithm.,5,ADSA
+Write a short note on job sequencing with deadline,5,ADSA
+"Determine the LCS of the following sequences:
+X: {A, B, C, B, D, A, B}
+Y: (B, D. C, A, B, A)",5,ADSA
+"Solve the sum of subsets problem for the following: n=4, m=15, w={3,5,6,7)",5,ADSA
+Give the algorithm for the N-Queen's problem and give any two solutions to the 8-Queen's problem,5,ADSA
+"Explain and apply NaÔve string matching on following strings
+String1: COMPANION
+
+String2:†PANI",5,ADSA
+"Write algorithm for greedy knapsack and Obtain the solution to following knapsack problem where n=7,m=15 (pl,p2.....p7) = (10,5,15,7,6,18,3), (wl,w2......,w7) (2,3,5,7,1,4,1).",10,ADSA
+Explain Dijkstra's Single source shortest path algorithm. Explain how it is different from Bellman Ford algorithm. Explain 15-puzzle problem using LC search technique.,10,ADSA
+Rewrite and Compare Rabin Karp and Knuth Morris Pratt Algorithms Give the pseudo code for the KMP String Matching Algorithm.,10,ADSA
+"Write algorithm for quick sort and sort the following elements [40,11,4,72,17,2,49]",10,ADSA
+"Write algorithm programming N-4, M-21 for 0/1 knapsack problem using dynamic the following example. Also solve the following- (pl,p2,p3,p4)-(2,5,8,1),(w1w2,w3,w4)=(10,15,6,9)",10,ADSA

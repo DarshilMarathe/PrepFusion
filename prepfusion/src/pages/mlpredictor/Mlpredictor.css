@@ -202,6 +202,7 @@
   height: auto;
   width: 900px;
   overflow: hidden;
+  min-height:34px;
 }
 
 .extracttextarea a {
