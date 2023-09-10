@@ -34,14 +34,14 @@ export default function Footer() {
         <h3 className="footer_quick_links">Quick Links</h3>
         <ul className="footer_unordered_list">
           <div className="footer-flex">
-            <li className="footer_ul_li"><Link to="/">&raquo; Home</Link></li>
-            <li className="footer_ul_li"><Link to="/upload">&raquo; Upload</Link></li>
-            <li className="footer_ul_li"><Link to="/problemset">&raquo; PYQs</Link></li>
+            <li className="footer_ul_li"><Link to="/"> <p>&raquo; Home</p> </Link></li>
+            <li className="footer_ul_li"><Link to="/upload"><p>&raquo; Upload</p> </Link></li>
+            <li className="footer_ul_li"><Link to="/problemset"> <p>&raquo; PYQs</p></Link></li>
           </div>
           <div className="footer-flex">
-            <li className="footer_ul_li"><Link to="/">&raquo; Statistics</Link></li>
-            <li className="footer_ul_li"><Link to="/">&raquo; About</Link></li>
-            <li className="footer_ul_li"><Link to="/">&raquo; Contact</Link></li>
+            <li className="footer_ul_li"><Link to="/"> <p>&raquo; Statistics</p></Link></li>
+            <li className="footer_ul_li"><Link to="/"> <p>&raquo; About</p></Link></li>
+            <li className="footer_ul_li"><Link to="/"> <p>&raquo; Contact</p></Link></li>
           </div>
         </ul>
       </div>

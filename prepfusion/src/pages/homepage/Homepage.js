@@ -9,12 +9,14 @@ import image4 from './image10.png'
 export default function Homepage() {
   return (
     
-      <div>
+      <div className='overflow-home'>
+
         <div className="homepage_color-div">
           <div className="adv">Advanced & Smart</div>
           <div className="learn">Learning Fusion</div>
           <p className="homepage_para">A straightforward solution built for online prep to</p>
           <p className="homepage_para2">ace tests and exams, effortlessly.</p>
+          
           <div className="homepage_horizontal_flex">
             <button className="homepage_psbutton">Problem Set</button>
             <p className="or">OR</p>
@@ -22,6 +24,9 @@ export default function Homepage() {
             <button className="homepage_get_ans">Get Answer</button>
           </div>
         </div>
+
+
+
         <div className="homepage_color-div">
           <div className="homepage_left-section">
             <img src={image} alt="Image"/>

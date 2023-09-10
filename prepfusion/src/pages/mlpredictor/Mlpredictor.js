@@ -12,6 +12,9 @@ function Mlpredictor() {
    const [predictionSubject, setPredictionSubject] = useState("")
    const [userQuestion, setUserQuestion] = useState("");
 
+   const[visibilty1,setVisibilty1] = useState("hidden");
+   const[visibilty2,setVisibilty2] = useState("hidden");
+
    const handleImageUpload = () => {
       if (fileInputRef.current) {
          fileInputRef.current.click();
@@ -40,6 +43,9 @@ function Mlpredictor() {
          const response = await axios.post('http://127.0.0.1:5000/predict', { extractedText });
          setPredictionModule(response.data.module);
          setPredictionSubject(response.data.subject);
+         
+         setVisibilty1("");
+         setVisibilty2("");
 
       } catch (error) {
          console.error(error);
@@ -94,7 +100,7 @@ function Mlpredictor() {
             </div>
          </div>
 
-         <div className="enter-textML">
+         <div style={{contentVisibility : visibilty1}} className="enter-textML">
             <div className="header2">
                <h3>Uploaded Image</h3>
             </div>
@@ -112,7 +118,7 @@ function Mlpredictor() {
             </div>
          </div>
 
-         <div className="predictions_section">
+         <div  style={{contentVisibility : visibilty2}} className="predictions_section">
             <div className="label-flex-ml">
                <label htmlFor="extracttextarea">Extracted Text:</label>
                <div className="extracttextarea" name="extracttextarea">

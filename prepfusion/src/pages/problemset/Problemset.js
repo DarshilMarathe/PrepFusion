@@ -158,9 +158,9 @@ export default function Problemset() {
       {/* Table  */}
       <div className="tablePS">
       <table>
-        <tr className="prob_row">
+        <tr className="prob_row ">
           <th style={{width:"10%"}}>Sr. No</th>
-          <th style={{width:"50%"}} >Question</th>
+          <th style={{width:"50vw"}}>Question</th>
           <th style={{width:"10%"}}>Solution</th>
           <th style={{width:"10%"}}>Subject</th>
           <th style={{width:"10%"}}>Marks</th>
