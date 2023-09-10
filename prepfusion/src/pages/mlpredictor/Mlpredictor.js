@@ -4,6 +4,8 @@ import Tesseract from "tesseract.js";
 import initialimage from "./upload-page-image.png";
 import axios from 'axios'
 
+import svgimg from './SVG.png'
+
 function Mlpredictor() {
    const fileInputRef = useRef(null);
    const [imageSrc, setImageSrc] = useState(null);
@@ -21,6 +23,7 @@ function Mlpredictor() {
       }
       console.log("hello")
       handlePredict()
+      setVisibilty1("");
       console.log(1)
    };
 
@@ -44,7 +47,6 @@ function Mlpredictor() {
          setPredictionModule(response.data.module);
          setPredictionSubject(response.data.subject);
          
-         setVisibilty1("");
          setVisibilty2("");
 
       } catch (error) {
@@ -67,6 +69,9 @@ function Mlpredictor() {
                </div>
                <div className="drag-drop-contain">
                   <div className="drag-drop-area" id="dropzone">
+                     
+                     <img src={svgimg} alt="" />
+
                      <button className="upload-image-button" onClick={handleImageUpload}>
                         Upload image
                      </button>

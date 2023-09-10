@@ -21,7 +21,7 @@ export default function Homepage() {
             <button className="homepage_psbutton">Problem Set</button>
             <p className="or">OR</p>
             <input type="text" placeholder="Enter your question here..." className="homepage_textbox"/>
-            <button className="homepage_get_ans">Get Answer</button>
+            <button className="homepage_get_ans">Get Ans</button>
           </div>
         </div>
 
