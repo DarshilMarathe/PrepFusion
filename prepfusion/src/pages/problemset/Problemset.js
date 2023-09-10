@@ -14,6 +14,7 @@ export default function Problemset() {
     const [selectedYear, setSelectedYear] = useState("All");
     const[selectedStudentYear,setSelectedStudentYear] = useState("All");
     const[selectedBranch,setSelectedBranch] = useState("All");
+    const[selectedModule,setSelectedModule]  = useState("All");
     // Filter the data based on user selections
     const filteredData = data.filter((item) => {
       return (
@@ -21,7 +22,8 @@ export default function Problemset() {
         (selectedMarks === "All" || item.Marks.toString() === selectedMarks) &&
         (selectedYear === "All" || item.Year2.toString() === selectedYear) &&
         (selectedStudentYear ==="All" || item.Student_year === selectedStudentYear) &&
-        (selectedBranch === "All" || item.Branch === selectedBranch)
+        (selectedBranch === "All" || item.Branch === selectedBranch) &&
+        (selectedModule === "All" || item.Module.toString() === selectedModule)
       );
     });
     
@@ -114,6 +116,23 @@ export default function Problemset() {
               <option value="2015">2015</option>
             </select>
           </div>
+
+          
+          <div className="select2 s22">
+           <span> Module : </span>
+            <select name="Branch" id="Branch" value={selectedYear}
+            onChange={(e) => setSelectedModule(e.target.value)}
+          >
+              <option value="All" selected>All</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </div>
+
 
           <div className="select2 s23">
            <span> Marks : </span>
