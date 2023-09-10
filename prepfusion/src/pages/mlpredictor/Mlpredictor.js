@@ -84,10 +84,10 @@ function Mlpredictor() {
                <h3>Type question</h3>
             </div>
             <div className="enter-text-areaML">
-               <div contentEditable="true">Your question....</div>
                <input
                   type="text"
                   value={extractedText}
+                  placeholder="Your question...."
                   onChange={(e) => setExtractedText(e.target.value)}
                />
                <button onClick={handlePredict}>Enter text</button>

@@ -142,8 +142,9 @@
   align-items: center;
 }
 
-.enter-text-areaML div {
+.enter-text-areaML input {
   width: 896px;
+  min-height: 18px;
   height: auto;
   padding: 20px;
   background: #ffffff;
