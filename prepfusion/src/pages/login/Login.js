@@ -7,21 +7,21 @@ import loginimage from "./loginimage.png";
 export default function login() {
   return (
     <div>
-      <div class="sign-in-container">
-        <div class="sign-in-img">
+      <div className="sign-in-container">
+        <div className="sign-in-img">
           <img src={loginimage} alt="sign-in-img" />
         </div>
-        <div class="sign-in-info">
-          <div class="sign-in-logo-and-toggle">
-            <div class="sign-in-logo-name">
+        <div className="sign-in-info">
+          <div className="sign-in-logo-and-toggle">
+            <div className="sign-in-logo-name">
               <img src={logo} alt="Company Logo" />
               <p>
                 Prep<span id="fusion">Fusion</span>
               </p>
             </div>
-            <div class="sign-in-toggle">
-              <button class="sign-in-button">Sign In</button>
-              <button class="sign-up-button">
+            <div className="sign-in-toggle">
+              <button className="sign-in-button">Sign In</button>
+              <button className="sign-up-button">
                 <Link className="sign-in-no-underline" to="/signup">
                   Sign Up
                 </Link>
@@ -51,11 +51,11 @@ export default function login() {
                 id="myCheckbox"
                 name="myCheckbox"
               />
-              <label class="sign-in-checkbox-label" for="myCheckbox">
+              <label className="sign-in-checkbox-label" htmlFor="myCheckbox">
                 Remember Password
               </label>
             </div>
-            <button class="sign-in-submit-button">Submit</button>
+            <button className="sign-in-submit-button">Submit</button>
           </form>
         </div>
       </div>

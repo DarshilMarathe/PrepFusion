@@ -7,47 +7,47 @@ import loginimage from "./loginimage.png";
 export default function Signin() {
   return (
     <div>
-      <div class="sign-up-container">
-        <div class="sign-up-img">
+      <div className="sign-up-container">
+        <div className="sign-up-img">
           <img src={loginimage} alt="sign-up-img" />
         </div>
-        <div class="sign-up-info">
-          <div class="sign-up-logo-and-toggle">
-            <div class="sign-up-logo-name">
+        <div className="sign-up-info">
+          <div className="sign-up-logo-and-toggle">
+            <div className="sign-up-logo-name">
               <img src={logo} alt="Company Logo" />
               <p>
                 Prep<span id="fusion">Fusion</span>
               </p>
             </div>
-            <div class="sign-up-toggle">
-              <button class="sign-in-button">
-                <Link className="sign-in-no-underline" to="/login">
+            <div className="sign-up-toggle">
+              <button className="sign-in-button">
+                <Link classNameName="sign-in-no-underline" to="/login">
                   Sign In
                 </Link>
               </button>
-              <button class="sign-up-button">Sign Up</button>
+              <button className="sign-up-button">Sign Up</button>
             </div>
           </div>
 
           <p>Welcome</p>
           <form action="">
             <input
-              class="sign-up-username"
+              className="sign-up-username"
               type="text"
               placeholder="Username"
             />
-            <input class="sign-up-password" type="text" placeholder="Email" />
+            <input className="sign-up-password" type="text" placeholder="Email" />
             <input
-              class="sign-up-password"
+              className="sign-up-password"
               type="password"
               placeholder="Password"
             />
             <input
-              class="sign-up-password"
+              className="sign-up-password"
               type="password"
               placeholder="Confirm Password"
             />
-            <button class="sign-up-submit-button">Submit</button>
+            <button className="sign-up-submit-button">Submit</button>
           </form>
         </div>
       </div>

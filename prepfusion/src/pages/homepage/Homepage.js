@@ -74,7 +74,7 @@ export default function Homepage() {
           <div className="feature-container">
             <div className="homepage_feature-text">
               <h2>Upcoming features</h2>
-              <p className="homepage_bp">The best part?<span class="homepage_si">Smoothly integrating</span></p>
+              <p className="homepage_bp">The best part?<span className="homepage_si">Smoothly integrating</span></p>
               {/* <p className="homepage_si">Smoothly integrating</p> */}
               <div className="homepage_feature-image">
                 <img src={image4} className="homepage_image10" alt="Feature Image" />
