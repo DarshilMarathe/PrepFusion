@@ -20,7 +20,10 @@ export default function Navbar() {
             <li>Statistics</li>
             <li>About</li>
         </ul>
-        <button className ="login-button">Login</button>
+
+        <button className ="login-button">
+        <Link to='/login'>Login</Link>
+          </button>
     </div>
 
       // {/* <ul>
