@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-
 .navbar {
   background: linear-gradient(
     180deg,
@@ -17,13 +16,13 @@
   align-content: center;
   padding: 0px 43px;
   /* height: 80px; */
-  height: 20vh;
+  height: 14vh;
   overflow: hidden;
 }
-.logo{
-  width:auto;
+.logo {
+  width: auto;
   height: auto;
-  display:flex ;
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -61,8 +60,14 @@
   text-align: center;
   padding: 0px;
 }
-.navbar-no-underline{
-    text-decoration: none;
+
+.navbar-no-underline {
+  text-decoration: none;
+}
+
+.login-button-no-underline {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .navbar li {
@@ -81,7 +86,7 @@
   line-height: 24px;
 }
 
-.navbar .login-button {
+.navbar button {
   background: #0069ff;
   border: 1px solid #17a2b8;
   border-radius: 25px;
