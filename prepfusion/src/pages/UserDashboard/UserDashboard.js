@@ -1,7 +1,43 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
+import {useNavigate} from "react-router-dom"
+
 import './UserDashboard.css'
 
 export default function UserDashboard() {
+    const navigate = useNavigate();
+
+    const [userData, setUserData] = useState({name:"",email:"",ispremium:"",chatbot:""})
+
+    useEffect(() => {
+
+        if(localStorage.getItem("token")){
+          userDetails();
+        }
+        else{
+          alert("Login to Continue")
+          navigate('/login')
+        }
+          //eslint-disable-next-line
+      }, [])
+    
+    const userDetails=async ()=>{
+          const response = await fetch(`http://localhost:5000/auth/getuser`, {
+              method: "POST", 
+              headers: {
+                "Content-Type": "application/json",
+                "auth-token" : localStorage.getItem("token")            
+              },
+            });
+            let json =  await response.json();
+            console.log(json);
+            if(json.success){
+                setUserData({name:json.user.name,email:json.user.email,ispremium:json.user.isPremium,chatbot:json.user.chatbot})
+            }
+            else{
+              alert("Invalid Credentials")
+              navigate('/');
+            }
+    }
   // <script>
   //     // Add event listeners to the tabs
   //     document.querySelectorAll(".db-tab").forEach((tab) => {
