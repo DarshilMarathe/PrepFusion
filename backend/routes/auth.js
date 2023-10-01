@@ -5,6 +5,7 @@ var jwt = require('jsonwebtoken');
 
 
 const User = require("../models/User")
+const fetchuser = require('../middleware/fetchuser')
 
 
 const router = express.Router()
@@ -133,5 +134,24 @@ router.post('/login',[
 
 })
 
+// ROUTE3: Get Logged in User Details :  '/auth/getuser' Login required
+//     decode auth token -> get user id and pass it
+//     Send a header of authentication token wherever auth required
+   
+router.post('/getuser', fetchuser , async (req,res)=>{
+    //gets as user in req due to middleware
+    try {
+
+        const userId = req.user.id;
+        //except password  everything
+        const user = await User.findById(userId).select("-password");
+        res.send(user);
+        
+    } catch (error) {
+        console.log(error.message)
+        res.status(500).send("Internal Server Error Occured");
+     }
+
+})
 
 module.exports = router
