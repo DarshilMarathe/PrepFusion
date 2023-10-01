@@ -1,0 +1,85 @@
+
+/* Style for the container div */
+.stat-select {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  /* Style for the inner div */
+  .stat-select-in {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Style for the span element */
+  .stat-select-in span {
+    color: rgb(42, 91, 107);
+    font-weight: bold;
+    font-size: 16px; /* Doubled the font size */
+  }
+  
+  /* Style for the select element */
+  .stat-select-in select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: white;
+    font-size: 16px; /* Doubled the font size */
+  }
+  
+  /* Style for the selected option */
+  .stat-select-in select option[selected] {
+    background-color: yellow;
+    font-weight: bold;
+    color: white;
+    font-size: 16px; /* Doubled the font size */
+  }
+  
+  /* Style for the default options */
+  .stat-select-in select option {
+    background-color: white;
+    color: black;
+    font-size: 16px; /* Doubled the font size */
+  }
+  
+  /* Style for the Subject select element */
+  .stat-select-in2 select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(187, 241, 241);
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: white;
+    font-size: 16px; /* Doubled the font size */
+  }
+  
+  /* Style for the selected Subject option */
+  .stat-select-in2 select option[selected] {
+    background-color: yellow;
+    font-weight: bold;
+    color: white;
+    font-size: 16px; /* Doubled the font size */
+  }
+  
+  /* Style for the default Subject options */
+  .stat-select-in2 select option {
+    background-color: white;
+    color: black;
+    font-size: 16px; /* Doubled the font size */
+  }
+  
+  .stat-select-in2{
+    margin-top: 3vh;
+  }
+
+  .stat-parent{
+    display: flex;
+    align-items: center;
+
+  }

@@ -37,7 +37,11 @@ export default function Navbar() {
             PYQ's
           </Link>
         </li>
-        <li>Statistics</li>
+        <li>
+          <Link to="/statistics" className="navbar-no-underline">
+            Statistics
+          </Link>
+        </li>
         <li>About</li>
       </ul>
 
