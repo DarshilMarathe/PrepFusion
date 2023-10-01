@@ -1,10 +1,49 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Login.css";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import logo from "../../images/logo.png";
 import loginimage from "./loginimage.png";
 
-export default function login() {
+export default function Login() {
+
+  const [credentials, setCredentials] = useState({email:"",password:""})
+  const navigate = useNavigate();
+
+  const handleChange = (e)=>{
+    setCredentials({
+      ...credentials,[e.target.name] : e.target.value,
+  })
+  console.log(credentials)
+  }
+
+  const handleSubmit =async (e)=>{
+    console.log(credentials);
+    e.preventDefault();
+
+    const response = await fetch(`http://localhost:5000/auth/login`, {
+      method: "POST", 
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({email : credentials.email,password:credentials.password}),
+    });
+    const json =  await response.json();
+    console.log(json);
+    if(json.success){
+      //save auth token and redirect
+      localStorage.setItem('token',json.authtoken);
+      // history.push("/");
+
+      alert("Successfully Logged In")
+
+      //TODO: Change navigation
+      navigate("/");
+    }
+    else{
+      alert("Invalid Credentials")
+    }
+  }
+
   return (
     <div>
       <div className="sign-in-container">
@@ -30,21 +69,21 @@ export default function login() {
           </div>
 
           <p>Welcome</p>
-          <form action="">
+          <form action="" onSubmit={handleSubmit}>
             <input
               class="sign-in-username"
               type="text"
-              placeholder="Username or Email"
+              placeholder="Enter email" name="email" id ="email" onChange={handleChange} value={credentials.email}
             />
             <input
               class="sign-in-password"
               type="password"
-              placeholder="Password"
+              placeholder="Password" name="password" id = "password" onChange={handleChange} value={credentials.password}
             />
-            <a class="sign-in-forgot-pwd" href="">
+            {/* <a class="sign-in-forgot-pwd" href="">
               Forgot password?
-            </a>
-            <div>
+            </a> */}
+            {/* <div>
               <input
                 class="sign-in-checkbox"
                 type="checkbox"
@@ -54,7 +93,7 @@ export default function login() {
               <label className="sign-in-checkbox-label" htmlFor="myCheckbox">
                 Remember Password
               </label>
-            </div>
+            </div> */}
             <button className="sign-in-submit-button">Submit</button>
           </form>
         </div>

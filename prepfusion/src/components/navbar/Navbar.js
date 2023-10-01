@@ -1,9 +1,18 @@
 import React from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import logo from "../../images/logo.png";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+
+  const handleLogout =()=>{
+    localStorage.removeItem('token');
+    alert("Logged Out Successfully")
+    navigate("/");
+  }
+
+
   return (
     <div className="navbar">
       <div className="logo">
@@ -32,11 +41,20 @@ export default function Navbar() {
         <li>About</li>
       </ul>
 
+      {!localStorage.getItem('token') ?
       <button>
-        <Link className="login-button-no-underline" to="/login">
-          Login
-        </Link>
+         <Link className="login-button-no-underline" to="/login">
+           Login
+         </Link>
       </button>
+       :
+       <button>
+       <Link className="login-button-no-underline" onClick={handleLogout}>
+         Logout
+       </Link>
+    </button>
+      }
+      
     </div>
 
     // {/* <ul>

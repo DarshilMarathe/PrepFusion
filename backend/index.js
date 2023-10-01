@@ -1,6 +1,6 @@
 const express = require("express");
 
-// // var cors = require('cors')
+var cors = require('cors')
 
 // DATACONNECT
 // Import the MongoDB driver
@@ -28,7 +28,7 @@ const port = 5000
 
 
 // //middleware
-// // app.use(cors())
+app.use(cors())
 app.use(express.json());  //orelse will return undefined on req.body
 
 // // //Available routes

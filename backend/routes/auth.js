@@ -87,6 +87,7 @@ router.post('/login',[
     body('email' , 'Enter a valid mail').isEmail(),
     body('password','Cannot be blank').exists(),
 ], async (req,res)=>{
+    console.log("called1")
     let success = false;
      // If there are errors, return bad request & errors
      const errors = validationResult(req);
