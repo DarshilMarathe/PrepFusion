@@ -70,7 +70,7 @@ export default function UserDashboard() {
   return (
     <div className="db-main">
         <div className="db-left-div">
-          <div className="db-profile-pic">RK</div>
+          <div className="db-profile-pic">{userData.name.substring(0,1)}</div>
           <p>{userData.name}</p>
           <div className="db-tabs">
             <a className="db-tab db-tab-active" href="#">
@@ -87,9 +87,9 @@ export default function UserDashboard() {
         <div className="db-dummy" />
         <div className="db-right-div">
           <div className="db-profile" id="profile-section">
-            <p className="db-section-heading">My profile</p>
+            <p className="db-section-heading">Welcome {userData.name}</p>
             <div className="db-details">
-              <p className="db-details-subheading">Your details</p>
+              <p className="db-details-subheading">Profile details</p>
               <div>
                 <div className="db-username"> Username : {userData.name} </div>
                 <div className="db-username"> Email    : {userData.email}</div>

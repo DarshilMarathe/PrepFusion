@@ -12,19 +12,68 @@ export default function Navbar() {
     navigate("/");
   }
 
+  const chatbotclick =()=>{
+    if(!localStorage.getItem("token")){
+      alert("Login to continue")
+      navigate('/login')
+    }
+    else{
+      userDetailspremium();
+      }
+  }
+
+  const userDetailspremium=async ()=>{
+    const response = await fetch(`http://localhost:5000/auth/getuser`, {
+        method: "POST", 
+        headers: {
+          "Content-Type": "application/json",
+          "auth-token" : localStorage.getItem("token")            
+        },
+      });
+      let json =  await response.json();
+      console.log(json);
+      if(json.success){
+          const ispremium = json.user.isPremium;
+          if(ispremium){
+            //redirect to chatbot
+            window.location.href = '';
+          }
+          else{
+            alert("Not a premium user. Get Premium for accessing statistics")
+            navigate('/getPrepPro');
+          }
+      }
+      else{
+        alert("Invalid Credentials")
+        navigate('/');
+      }
+}
+
+
+
 
   return (
     <div  className="navbar">
-      <div className="logo">
-        <img src={logo} alt="Company Logo" />
-        <span>
-          Prep<span id="fusion">Fusion</span>
-        </span>
-      </div>
+      <Link to="/" className="navbar-no-underline">
+        <div className="logo">
+          <img src={logo} alt="Company Logo" />
+          <span>
+            Prep<span id="fusion">Fusion</span>
+          </span>
+        </div>
+      </Link>
       <ul>
+
+        {!localStorage.getItem("token") &&
         <li>
-          <Link to="/" className="navbar-no-underline">
-            Home
+        <Link to="/" className="navbar-no-underline">
+          Home
+        </Link>
+      </li>
+        }
+        <li>
+          <Link to="/" className="navbar-no-underline" onClick={chatbotclick}>
+            Chatbot
           </Link>
         </li>
         <li>
@@ -42,7 +91,11 @@ export default function Navbar() {
             Statistics
           </Link>
         </li>
-        <li>About</li>
+        <li>
+          <Link to="/resources" className="navbar-no-underline">
+            Resources
+          </Link>
+        </li>
       </ul>
 
       {!localStorage.getItem('token') ?
