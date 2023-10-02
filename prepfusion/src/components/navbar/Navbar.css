@@ -4,6 +4,10 @@
 
 
 .navbar {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 93vw; */
   background: linear-gradient(
     180deg,
     #eaeeff 0%,
@@ -20,6 +24,7 @@
   /* height: 80px; */
   height: 14vh;
   overflow: hidden;
+  z-index: 1;
 }
 .logo {
   width: auto;
