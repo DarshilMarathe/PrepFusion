@@ -3,7 +3,46 @@ import { useState } from "react";
 import './Pay.css'
 import { useNavigate } from "react-router-dom";
 
+import PrepPro from '../../images/PrepPro.jpg'
+
 function Pay() {
+
+
+	//   //update a note
+	//   const editnote = async (id,title,description,tag)=>{
+
+    //     //API CALL   -- searched fetch with headers
+    //     const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
+    //       method: "PUT", 
+         
+    //       headers: {
+    //         "Content-Type": "application/json",
+    //         "auth-token": localStorage.getItem('token'),
+    //       },
+    //       body: JSON.stringify({title,description,tag}), 
+    //     });
+    //     const json =  await response.json();
+
+
+    //      //logic to edit in client
+      
+    //     let newNotes = JSON.parse(JSON.stringify(notes));
+    //     for(let index=0 ; index < newNotes.length ; index++){
+         
+    //       const element = notes[index];
+    //       if(element._id === id){
+    //         newNotes[index].title = title;
+    //         newNotes[index].description = description;
+    //         newNotes[index].tag = tag;
+    //         break;
+    //       }
+    //     }
+    //     setNotes(newNotes);
+        
+    //   }
+
+
+	  
 	const navigate = useNavigate();
 	const [book, setBook] = useState({
 		name: "The Fault In Our Stars",
@@ -83,22 +122,18 @@ function Pay() {
 	};
 
 	return (
-	<>
-		<div className="App">
-			{/* Complete GET PREMIUM PAGE  -- integrate pay here*/}
-			<div className="book_container">
-				<img src={book.img} alt="book_img" className="book_img" />
-				<p className="book_name">{book.name}</p>
-				<p className="book_author">By {book.author}</p>
-				<p className="book_price">
-					Price : <span>&#x20B9; {book.price}</span>
-				</p>
-				<button onClick={handlePayment} className="buy_btn">
-					buy now
-				</button>
-			</div>
+	<div>
+	<div className="proPage">
+		<div className="img_pro">
+		<img className="getPro_img" src={PrepPro} alt="" />
 		</div>
-	</>
+		<div className="prosec">
+			<button  onClick={handlePayment} className="buy_btn getPro_button">
+				Get PrepPro
+			</button>
+		</div>
+	</div>	
+	</div>
 		
 	);
 }
