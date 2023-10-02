@@ -1,6 +1,9 @@
 const express = require("express");
+const cors = require('cors')
 
-var cors = require('cors')
+
+const dotenv = require("dotenv");
+const paymentRoutes = require("./routes/payment");
 
 // DATACONNECT
 // Import the MongoDB driver
@@ -27,13 +30,15 @@ const app = express()
 const port = 5000
 
 
+dotenv.config();
+
 // //middleware
 app.use(cors())
 app.use(express.json());  //orelse will return undefined on req.body
 
-// // //Available routes
+//routes
 app.use('/auth', require('./routes/auth'))
-// // app.use('/api/notes', require('./routes/notes'))
+app.use("/payment", paymentRoutes);
 
 app.get('/', (req, res) => {
   res.send('Hello World!')

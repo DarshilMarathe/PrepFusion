@@ -1,12 +1,27 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState,useEffect } from "react";
 import "./Mlpredictor.css";
 import Tesseract from "tesseract.js";
 import initialimage from "./upload-page-image.png";
 import axios from 'axios'
+import { useNavigate } from "react-router-dom";
 
 import svgimg from './SVG.png'
 
 function Mlpredictor() {
+
+   const navigate = useNavigate();
+   useEffect(() => {
+     userAccess();
+       //eslint-disable-next-line
+   }, [])
+ 
+   const userAccess = ()=>{
+     if(!localStorage.getItem("token")){
+       alert("Must be login to access problemset")
+       navigate('/login');
+     }
+   }
+
    const fileInputRef = useRef(null);
    const [imageSrc, setImageSrc] = useState(null);
    const [extractedText, setExtractedText] = useState("");
@@ -64,7 +79,7 @@ function Mlpredictor() {
                <div className="MLimage-container">
                   <img
                      src={initialimage}
-                     alt="Image"
+                     alt="UploadImage"
                   />
                </div>
                <div className="drag-drop-contain">
