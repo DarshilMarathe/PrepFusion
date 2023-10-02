@@ -44,7 +44,7 @@ const Statistics = () => {
           }
           else{
             alert("Not a premium user. Get Premium for accessing statistics")
-            navigate('/pay');
+            navigate('/getPrepPro');
           }
       }
       else{

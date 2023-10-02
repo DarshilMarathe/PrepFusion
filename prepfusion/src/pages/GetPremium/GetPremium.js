@@ -1,8 +1,123 @@
-import React from "react";
+import React,{useState} from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 import "./GetPremium.css";
 
 export default function GetPremium() {
+	const navigate = useNavigate();
+
+  const [premiumprice, setPremiumprice] = useState(199);
+
+  const handlePayment = async () => {
+		try {
+
+			if(!localStorage.getItem("token")){
+				alert("You have not logged in.");
+				return navigate("/login");
+			}
+            // console.log("Hanlde")
+			const orderUrl = "http://localhost:5000/payment/orders";
+			const { data } = await axios.post(
+				orderUrl,
+				{ amount: premiumprice },
+				{
+					headers: {
+						'Access-Control-Allow-Origin': '*',
+						'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE',
+						'Access-Control-Allow-Headers': 'Content-Type, X-Auth-Token, Origin, Authorization',
+					},
+				}
+			);
+            console.log("2nd")
+			console.log(data);
+			initPayment(data.data);
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
+  const initPayment = (data) => {
+    console.log("In init")
+    const options = {
+      key: "rzp_test_zkRk5Km3mrtYWp",
+      amount: data.amount,
+      currency: data.currency,
+      description: "Test Transaction",
+      order_id: data.id,
+      handler: async (response) => {
+        try {
+          const verifyUrl = "http://localhost:5000/payment/verify";
+          const { data } = await axios.post(verifyUrl, response, {
+            headers: {
+              'Access-Control-Allow-Origin': '*',
+              'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE',
+              'Access-Control-Allow-Headers': 'Content-Type, X-Auth-Token, Origin, Authorization',
+            },
+          });
+          console.log(data);
+          if(data.status){
+            alert("Purchased PrepPro Succesfully");
+            //Update in DB
+            //fetch user id
+            userDetails(); 
+
+            // navigate("") --> to a page to show order and pay id 
+            navigate("/user")
+          }
+        } catch (error) {
+          console.log(error);
+        }
+      },
+      theme: {
+        color: "#3399cc",
+      },
+    };
+
+    console.log(options)
+    const rzp1 = new window.Razorpay(options);
+
+
+    rzp1.open();
+  };
+
+const userDetails = async () => {
+  const response = await fetch(`http://localhost:5000/auth/getuser`, {
+    method: "POST",
+    headers: {
+    "Content-Type": "application/json",
+    "auth-token": localStorage.getItem("token"),
+    },
+  });
+  let json = await response.json();
+  console.log(json);
+  if (json.success) {
+    updatepremium(json.user._id);
+  } else {
+    alert("Invalid Credentials");
+    navigate("/");
+  }
+  };
+
+  //update a note
+  const updatepremium = async (id)=>{
+
+    //API CALL   -- searched fetch with headers
+    const response = await fetch(`http://localhost:5000/payment/status/${id}`, {
+      method: "PUT", 
+     
+      headers: {
+      "Content-Type": "application/json",
+      "auth-token": localStorage.getItem('token'),
+      },
+      body: JSON.stringify({}), 
+    });
+    const json =  await response.json();
+
+    console.log(json);
+     
+    }
+    
   return (
     <div className="PrepPro">
       <p className="pp-heading">Become a Premium Student</p>
@@ -50,7 +165,7 @@ export default function GetPremium() {
             <p>Access to statistics</p>
             <p>Ad-free Experience</p>
           </div>
-          <button>Get Premium</button>
+          <button  onClick={handlePayment}>Get Premium</button>
         </div>
       </div>
     </div>
