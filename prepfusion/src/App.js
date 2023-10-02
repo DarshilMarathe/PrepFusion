@@ -13,6 +13,7 @@ import Statistics from './pages/statistics/Statistics';
 import Resources from './pages/resources/Resources';
 import Pay from './pages/pay/Pay';
 import Tester from './pages/pay/Tester';
+import GetPremium from './pages/GetPremium/GetPremium';
 
 
 
@@ -32,6 +33,7 @@ function App() {
       <Route path='/resources' element = {<Resources/>} />
       <Route path='/pay' element = {<Pay/>} />
       <Route path='/tester' element = {<Tester/>} />
+      <Route path='/getPrepPro' element = {<GetPremium/>} />
     </Routes>
 
    <Footer/>

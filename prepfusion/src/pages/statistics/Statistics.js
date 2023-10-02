@@ -20,13 +20,38 @@ const Statistics = () => {
           navigate('/login')
         }
         else{
-          setBlurpage("")
+          userDetailspremium();
           }
       }
     
   const [selectedYear, setSelectedYear] = useState("Dec-2022");
   const [selectedSubject, setSelectedSubject] = useState("IP");
 
+  const userDetailspremium=async ()=>{
+    const response = await fetch(`http://localhost:5000/auth/getuser`, {
+        method: "POST", 
+        headers: {
+          "Content-Type": "application/json",
+          "auth-token" : localStorage.getItem("token")            
+        },
+      });
+      let json =  await response.json();
+      console.log(json);
+      if(json.success){
+          const ispremium = json.user.isPremium;
+          if(ispremium){
+            setBlurpage("");
+          }
+          else{
+            alert("Not a premium user. Get Premium for accessing statistics")
+            navigate('/pay');
+          }
+      }
+      else{
+        alert("Invalid Credentials")
+        navigate('/');
+      }
+}
 
 
   // Filter the data based on the selected year and subject
