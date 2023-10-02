@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+body {
+  margin: 0;
+}
+.PrepPro {
+  background-color: #fff;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pp-heading {
+  width: 100vw;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 7vh;
+  margin: 3px;
+  text-align: center;
+  color: #081b4b;
+}
+.pp-subheading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin: 1vh;
+  color: #0069ff;
+}
+.pp-subheading-container p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3vh;
+  margin: 1vh;
+  color: #0069ff;
+}
+.pp-info-container {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3vh;
+}
+.pp-free-info,
+.pp-paid-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #eaeeff;
+  border-radius: 25px;
+}
+
+.pp-dark-section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: #1b223c; */
+  border-radius: 25px 25px 0 0;
+  border-bottom: 1px solid #1b223c;
+  padding: 2vh 9vh;
+}
+.pp-dark-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1b223c;
+  border-radius: 25px 25px 0 0;
+  padding: 2vh 5vh;
+}
+
+.pp-plan-heading1 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4vh;
+  margin: 1.5vh;
+  color: white;
+}
+.pp-plan-heading2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vh;
+  margin: 1vh 1.5vh 1.5vh 1.5vh;
+  color: white;
+}
+.pp-plan-subheading1 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3vh;
+  margin: 3px;
+  color: black;
+}
+
+.pp-plan-subheading1 span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vh;
+  margin: 3px;
+  color: black;
+}
+
+.pp-plan-subheading2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3vh;
+  margin: 3px;
+  color: white;
+}
+
+.pp-plan-subheading2 span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vh;
+  margin: 3px;
+  color: white;
+}
+
+.pp-features p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.3vh;
+  text-align: center;
+}
+.pp-features {
+  padding: 1vh;
+}
+
+.pp-free-info button {
+  height: 5vh;
+  width: 30vh;
+  background: white;
+  color: black;
+  border: 1px solid #1b223c;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vh;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+.pp-paid-info button {
+  height: 5vh;
+  width: 30vh;
+  background: #1b223c;
+  color: white;
+  border: 1px solid #1b223c;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vh;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.pp-dark-section1 .pp-plan-heading1 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4vh;
+  margin: 1.5vh;
+  color: black;
+}
+
+.pp-dark-section1 .pp-plan-heading2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2vh;
+  margin: 1vh 1.5vh 1.5vh 1.5vh;
+  color: black;
+}
