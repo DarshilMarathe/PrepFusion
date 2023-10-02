@@ -2,6 +2,10 @@ const router = require("express").Router();
 const Razorpay = require("razorpay");
 const crypto = require("crypto");
 
+const User = require("../models/User");
+
+const fetchuser = require('../middleware/fetchuser')
+
 router.post("/orders", async (req, res) => {
 	try {
 		const instance = new Razorpay({
@@ -48,5 +52,38 @@ router.post("/verify", async (req, res) => {
 		console.log(error);
 	}
 });
+
+
+
+router.put('/status/:id',fetchuser,async (req,res)=>{
+
+    try {
+        const {} = req.body;
+
+    //create newnote object
+    const newnote = {};
+    // if(title) {newnote.title = title};
+    // if(description) {newnote.description = description};
+    // if(tag) {newnote.tag = tag};
+    if(true) {newnote.isPremium = true};
+
+    //Find note to be updated
+    let user = await User.findById(req.params.id); // params.id -> from url
+    if(!user) {return res.status(404).send("Not Found")}
+
+    // if(note.user.toString() !== req.user.id){
+    //     return res.status(401).send("Not Alllowed");
+    // }
+
+    note = await User.findByIdAndUpdate(req.params.id,{$set : newnote}, {new : true})
+    // Usually when you perform update operations in mongoose, it returns the previous state of the document (before it was updated) and not the updated one. By setting "new" to true in the third argument of the object in "findByIdAndUpdate()", we tell mongoose to return the updated state of the object instead of its default behaviour
+    res.json(note)
+    } catch (error) {
+        console.log(error.message)
+        res.status(500).send("Internal Server Error Occured");
+    }
+    
+
+})
 
 module.exports = router;

@@ -74,6 +74,10 @@ function Pay() {
 					console.log(data);
 					if(data.status){
 						alert("Purchased PrepPro Succesfully");
+						//Update in DB
+						//fetch user id
+						userDetails(); 
+
 						// navigate("") --> to a page to show order and pay id 
 						navigate("/user")
 					}
@@ -121,6 +125,43 @@ function Pay() {
 		}
 	};
 
+	const userDetails = async () => {
+		const response = await fetch(`http://localhost:5000/auth/getuser`, {
+		  method: "POST",
+		  headers: {
+			"Content-Type": "application/json",
+			"auth-token": localStorage.getItem("token"),
+		  },
+		});
+		let json = await response.json();
+		console.log(json);
+		if (json.success) {
+			updatepremium(json.user._id);
+		} else {
+		  alert("Invalid Credentials");
+		  navigate("/");
+		}
+	  };
+
+	     //update a note
+		 const updatepremium = async (id)=>{
+
+			//API CALL   -- searched fetch with headers
+			const response = await fetch(`http://localhost:5000/payment/status/${id}`, {
+			  method: "PUT", 
+			 
+			  headers: {
+				"Content-Type": "application/json",
+				"auth-token": localStorage.getItem('token'),
+			  },
+			  body: JSON.stringify({}), 
+			});
+			const json =  await response.json();
+	
+			console.log(json);
+			 
+		  }
+	
 	return (
 	<div>
 	<div className="proPage">

@@ -10,20 +10,20 @@ export default function UserDashboard() {
     name: "",
     email: "",
     ispremium: "",
-    chatbot: "",
+    date: "",
   });
 
-  // useEffect(() => {
+  useEffect(() => {
 
-  //     if(localStorage.getItem("token")){
-  //       userDetails();
-  //     }
-  //     else{
-  //       alert("Login to Continue")
-  //       navigate('/login')
-  //     }
-  //       //eslint-disable-next-line
-  //   }, [])
+      if(localStorage.getItem("token")){
+        userDetails();
+      }
+      else{
+        alert("Login to Continue")
+        navigate('/login')
+      }
+        //eslint-disable-next-line
+    }, [])
 
   const userDetails = async () => {
     const response = await fetch(`http://localhost:5000/auth/getuser`, {
@@ -40,7 +40,7 @@ export default function UserDashboard() {
         name: json.user.name,
         email: json.user.email,
         ispremium: json.user.isPremium,
-        chatbot: json.user.chatbot,
+        date: json.user.date,
       });
     } else {
       alert("Invalid Credentials");
@@ -71,7 +71,7 @@ export default function UserDashboard() {
     <div className="db-main">
         <div className="db-left-div">
           <div className="db-profile-pic">RK</div>
-          <p>Rutvik</p>
+          <p>{userData.name}</p>
           <div className="db-tabs">
             <a className="db-tab db-tab-active" href="#">
               Profile
@@ -91,10 +91,10 @@ export default function UserDashboard() {
             <div className="db-details">
               <p className="db-details-subheading">Your details</p>
               <div>
-                <div className="db-username"> firstname : </div>
-                <div className="db-username"> lastname :</div>
-                <div className="db-username"> username :</div>
-                <div className="db-username"> Email :</div>
+                <div className="db-username"> Username : {userData.name} </div>
+                <div className="db-username"> Email    : {userData.email}</div>
+                <div className="db-username"> Premium  : {userData.ispremium ? "Premium User" : "Not Premium"}</div>
+                <div className="db-username"> Account Created on : {userData.date.substring(0,10)}</div>
               </div>
             </div>
           </div>
