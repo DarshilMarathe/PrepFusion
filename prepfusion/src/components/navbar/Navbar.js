@@ -1,6 +1,6 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "./Navbar.css";
-import { Link,useNavigate } from "react-router-dom";
+import { Link,useNavigate} from "react-router-dom";
 import logo from "../../images/logo.png";
 
 export default function Navbar() {
@@ -14,7 +14,7 @@ export default function Navbar() {
 
 
   return (
-    <div className="navbar">
+    <div  className="navbar">
       <div className="logo">
         <img src={logo} alt="Company Logo" />
         <span>
@@ -52,11 +52,21 @@ export default function Navbar() {
          </Link>
       </button>
        :
-       <button>
-       <Link className="login-button-no-underline" onClick={handleLogout}>
+       <div>
+        <button style={{marginRight:"1vw"}}>
+       <Link className="login-button-no-underline"  to="/user" > 
+      {/* //  onClick={handleLogout}> */}
+         Profile
+       </Link>
+    </button>
+    <button>
+       <Link className="login-button-no-underline"   onClick={handleLogout}>
          Logout
        </Link>
     </button>
+       </div>
+       
+    
       }
       
     </div>

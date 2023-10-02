@@ -142,11 +142,14 @@ router.post('/login',[
 router.post('/getuser', fetchuser , async (req,res)=>{
     //gets as user in req due to middleware
     try {
-
+        //TODO::::
+        //Success - true false
+        let success = true
         const userId = req.user.id;
+        console.log(userId)
         //except password  everything
         const user = await User.findById(userId).select("-password");
-        res.send(user);
+        res.send({success,user});
         
     } catch (error) {
         console.log(error.message)
