@@ -10,6 +10,7 @@ import Login from './pages/login/Login'
 import Signin from './pages/signin/Signin'
 import UserDashboard from './pages/UserDashboard/UserDashboard';
 import Statistics from './pages/statistics/Statistics';
+import Resources from './pages/resources/Resources';
 
 
 
@@ -26,6 +27,7 @@ function App() {
       <Route path='/upload' element = {<Mlpredictor/>} />
       <Route path='/statistics' element = {<Statistics/>} />
       <Route path='/user' element = {<UserDashboard/>} />
+      <Route path='/resources' element = {<Resources/>} />
     </Routes>
 
    <Footer/>
