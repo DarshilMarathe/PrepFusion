@@ -1,0 +1,33 @@
+
+.headfaq{
+    font-family: 'Poppins';
+    font-weight: 1000;
+    font-size: 50px;
+    /* padding-left: 105px; */
+    /* padding-top: 60px; */
+    color: #0047b3
+}
+
+.faqpageselect{
+    border-radius: 10px;
+    /* height: 8vh; */
+    width: 20vw;
+    background-color: rgb(186, 211, 232);
+    /* width: 10vw; */
+    /* align-self: center; */
+    align-content: center;
+    text-align: center;
+    /* font-weight: bolder; */
+    /* color */
+    margin-right: 2vw;
+}
+
+.center_faqs{
+    width: 80vw;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.mardfaq-2{
+    margin: 3vh;
+}

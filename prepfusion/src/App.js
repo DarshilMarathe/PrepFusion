@@ -5,13 +5,14 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Homepage from './pages/homepage/Homepage';
 import Mlpredictor from './pages/mlpredictor/Mlpredictor';
-import  Problemset from './pages/problemset/Problemset';
+import Problemset from './pages/problemset/Problemset';
 import Login from './pages/login/Login'
 import Signin from './pages/signin/Signin'
 import UserDashboard from './pages/UserDashboard/UserDashboard';
 import Statistics from './pages/statistics/Statistics';
 import Resources from './pages/resources/Resources';
 import GetPremium from './pages/GetPremium/GetPremium';
+import FAQ from './pages/faq/FAQ';
 
 
 
@@ -30,6 +31,7 @@ function App() {
       <Route path='/user' element = {<UserDashboard/>} />
       <Route path='/resources' element = {<Resources/>} />
       <Route path='/getPrepPro' element = {<GetPremium/>} />
+      <Route path="/frequentQuestions" element={<FAQ/>} />
     </Routes>
 
    <Footer/>
