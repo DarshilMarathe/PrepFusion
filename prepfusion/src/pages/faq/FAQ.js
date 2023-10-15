@@ -1,11 +1,62 @@
 import React from "react";
-import { useState} from "react";
+import { useState,useEffect} from "react";
 // import "./Problemset.css";
+import { useNavigate } from "react-router-dom";
 
 import solImage from "../../images/solution-image.png";
 import './FAQ.css'
 
 export default function FAQ() {
+
+    const [blurpage, setBlurpage] = useState("blur(10px)")
+    const navigate = useNavigate();
+    useEffect(() => {
+        setTimeout(userAccess,1000)
+          //eslint-disable-next-line
+      }, [])
+
+      const userAccess = ()=>{
+        if(!localStorage.getItem("token")){
+          alert("Login to continue")
+          navigate('/login')
+        }
+        else{
+          userDetailspremium();
+          }
+      }
+    
+  const [selectedYear, setSelectedYear] = useState("Dec-2022");
+  const [selectedSubject, setSelectedSubject] = useState("IP");
+
+  const userDetailspremium=async ()=>{
+    const response = await fetch(`http://localhost:5000/auth/getuser`, {
+        method: "POST", 
+        headers: {
+          "Content-Type": "application/json",
+          "auth-token" : localStorage.getItem("token")            
+        },
+      });
+      let json =  await response.json();
+      console.log(json);
+      if(json.success){
+          const ispremium = json.user.isPremium;
+          if(ispremium){
+            setBlurpage("");
+          }
+          else{
+            alert("Not a premium user. Get Premium for accessing statistics")
+            navigate('/getPrepPro');
+          }
+      }
+      else{
+        alert("Invalid Credentials")
+        navigate('/');
+      }
+}
+
+
+
+
    
     const [showData, setShowData] = useState(IP);
 
@@ -44,6 +95,8 @@ export default function FAQ() {
 
   return (
     <>
+    <div style={{filter:`${blurpage}`}}>
+
 
       <div className="headerPS">
         <h1 className="headfaq">Frequently Asked Questions</h1>
@@ -146,6 +199,7 @@ export default function FAQ() {
 
       <div>
 
+    </div>
     </div>
       
     </>

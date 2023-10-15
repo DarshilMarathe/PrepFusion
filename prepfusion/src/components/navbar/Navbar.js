@@ -86,6 +86,14 @@ export default function Navbar() {
             PYQ's
           </Link>
         </li>
+        
+        {localStorage.getItem("token") &&
+        <li>
+        <Link to="/frequentQuestions" className="navbar-no-underline">
+          FAQ
+        </Link>
+      </li>
+        }
         <li>
           <Link to="/statistics" className="navbar-no-underline">
             Statistics
