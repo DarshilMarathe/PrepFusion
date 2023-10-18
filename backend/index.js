@@ -1,16 +1,19 @@
 const express = require("express");
 const cors = require('cors')
-
-
-const dotenv = require("dotenv");
+const dotenv = require('dotenv');
 const paymentRoutes = require("./routes/payment");
+
+// CONFIG .ENV FILE.
+dotenv.config({path: __dirname+'/.env'});
+
 
 // DATACONNECT
 // Import the MongoDB driver
 const mongoose = require('mongoose');
 
 // Connect to the MongoDB database
-mongoose.connect('mongodb://0.0.0.0:27017/prepfusion' ); 
+// mongoose.connect('mongodb://0.0.0.0:27017/prepfusion' ); 
+mongoose.connect(process.env.MONGO_DB); 
 //specify database for unique email
 
 // Listen for the 'open' event to know when the connection is successful

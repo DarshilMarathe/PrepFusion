@@ -59,7 +59,7 @@ router.post('/createuser',[
     
 
     //Send Auth Token -- can verify by taking back auth token and get data and check if temperred -- read more
-    const JWT_SECRET = "shhhh"
+    const JWT_SECRET = process.env.JWT_SECRET
 
     //to be sent in auth token
     const data = {

@@ -103,7 +103,7 @@ router.put('/status/:id',fetchuser,async (req,res)=>{
 			auth: {
 				// TODO: replace `user` and `pass` values from <https://forwardemail.net>
 				user: "davidherealways@gmail.com",
-				pass: "atam szmm igzv iylo",
+				pass: process.env.mailpass,
 			},
 			});
 
