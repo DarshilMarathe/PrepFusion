@@ -1,21 +1,32 @@
 import React,{useState,useEffect} from "react";
 import "./Navbar.css";
 import { Link,useNavigate} from "react-router-dom";
+import { toast } from 'react-toastify';
+
 import logo from "../../images/logo.png";
 
 export default function Navbar() {
   const navigate = useNavigate();
 
+  const uploadpage =()=>{
+    if(!localStorage.getItem("token")){
+       toast.warn("Login to access Analyzer")
+     }
+    
+  }
+
   const handleLogout =()=>{
     localStorage.removeItem('token');
-    alert("Logged Out Successfully")
     navigate("/");
+    toast.success("Logged out Succesfully");
+
   }
 
   const chatbotclick =()=>{
     if(!localStorage.getItem("token")){
-      alert("Login to continue")
       navigate('/login')
+      //error
+      toast.warn("Login to continue")
     }
     else{
       userDetailspremium();
@@ -39,12 +50,12 @@ export default function Navbar() {
             window.location.href = '';
           }
           else{
-            alert("Not a premium user. Get Premium for accessing statistics")
+            toast.warn("Not a premium user. Get Premium for accessing statistics")
             navigate('/getPrepPro');
           }
       }
       else{
-        alert("Invalid Credentials")
+        toast.error("Invalid Credentials")
         navigate('/');
       }
 }
@@ -77,7 +88,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="/upload" className="navbar-no-underline">
+          <Link to="/upload" className="navbar-no-underline" onClick={uploadpage}>
             Upload
           </Link>
         </li>
@@ -116,7 +127,6 @@ export default function Navbar() {
        <div>
         <button style={{marginRight:"1vw"}}>
        <Link className="login-button-no-underline"  to="/user" > 
-      {/* //  onClick={handleLogout}> */}
          Profile
        </Link>
     </button>
@@ -131,11 +141,5 @@ export default function Navbar() {
       }
       
     </div>
-
-    // {/* <ul>
-    //   <li><Link to='/'>Homepage</Link></li>
-    //   <li><Link to='/mlpredictor'>Mlpage</Link></li>
-    //   <li><Link to='/problemset'>Problemset</Link></li>
-    // </ul> */}
   );
 }

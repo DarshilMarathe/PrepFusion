@@ -1,6 +1,8 @@
 import React,{useEffect,useState} from 'react'
 import {useNavigate} from "react-router-dom"
 import { Pie } from "react-chartjs-2";
+import { toast } from "react-toastify";
+
 
 import './Statistics.css'
 import "chart.js/auto"
@@ -16,7 +18,7 @@ const Statistics = () => {
 
       const userAccess = ()=>{
         if(!localStorage.getItem("token")){
-          alert("Login to continue")
+          toast.warn("Login to continue")
           navigate('/login')
         }
         else{
@@ -43,12 +45,12 @@ const Statistics = () => {
             setBlurpage("");
           }
           else{
-            alert("Not a premium user. Get Premium for accessing statistics")
+            toast.warn("Not a premium user. Get Premium for accessing statistics")
             navigate('/getPrepPro');
           }
       }
       else{
-        alert("Invalid Credentials")
+        toast.error("Invalid Credentials")
         navigate('/');
       }
 }

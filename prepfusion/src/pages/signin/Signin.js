@@ -3,6 +3,8 @@ import "./Signin.css";
 import { Link,useNavigate } from "react-router-dom";
 import logo from "../../images/logo.png";
 import loginimage from "./loginimage.png";
+import { toast } from "react-toastify";
+
 
 export default function Signin() {
   const [credentials, setCredentials] = useState({name : "",email : "" , password : "",cpassword : ""})
@@ -18,11 +20,13 @@ export default function Signin() {
   
 
   const handleSubmit=async (e)=>{
+    e.preventDefault();
+
     if(credentials.password !== credentials.cpassword)
     {
-      return alert("Password doesnt match")
+      toast.error("Password doesnt match")
     }
-      e.preventDefault();
+    else{
       const response = await fetch(`http://localhost:5000/auth/createuser`, {
           method: "POST", 
           headers: {
@@ -36,14 +40,16 @@ export default function Signin() {
           //save auth token and redirect
           localStorage.setItem('token',json.authtoken);
 
-          //Can use alert bootstrap
-          alert("Successfully Signed In")
-           navigate("/");
+          toast.success("Successfully Signed In")
+          navigate("/");
 
         }
         else{
-          alert("Invalid Credentials")
+          toast.warn("Something went wrong. Server Error")
         }
+
+    }
+     
   }
 
 

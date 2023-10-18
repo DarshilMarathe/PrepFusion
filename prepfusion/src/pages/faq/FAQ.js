@@ -2,6 +2,7 @@ import React from "react";
 import { useState,useEffect} from "react";
 // import "./Problemset.css";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 import solImage from "../../images/solution-image.png";
 import './FAQ.css'
@@ -17,7 +18,7 @@ export default function FAQ() {
 
       const userAccess = ()=>{
         if(!localStorage.getItem("token")){
-          alert("Login to continue")
+          toast.warn("Login to continue")
           navigate('/login')
         }
         else{
@@ -44,12 +45,12 @@ export default function FAQ() {
             setBlurpage("");
           }
           else{
-            alert("Not a premium user. Get Premium for accessing statistics")
+            toast.warn("Not a premium user. Get Premium for FAQ")
             navigate('/getPrepPro');
           }
       }
       else{
-        alert("Invalid Credentials")
+        toast.error("Invalid Credentials")
         navigate('/');
       }
 }

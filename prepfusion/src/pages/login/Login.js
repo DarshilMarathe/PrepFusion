@@ -3,6 +3,7 @@ import "./Login.css";
 import { Link,useNavigate } from "react-router-dom";
 import logo from "../../images/logo.png";
 import loginimage from "./loginimage.png";
+import { toast } from "react-toastify";
 
 export default function Login() {
 
@@ -34,13 +35,13 @@ export default function Login() {
       localStorage.setItem('token',json.authtoken);
       // history.push("/");
 
-      alert("Successfully Logged In")
+      toast.success("Successfully Logged In")
 
       //TODO: Change navigation
       navigate("/");
     }
     else{
-      alert("Invalid Credentials")
+      toast.error("Invalid Credentials")
     }
   }
 

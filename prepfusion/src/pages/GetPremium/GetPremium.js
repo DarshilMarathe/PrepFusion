@@ -1,19 +1,52 @@
 import React,{useState} from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { toast } from "react-toastify";
+
 
 import "./GetPremium.css";
 
 export default function GetPremium() {
 	const navigate = useNavigate();
 
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    ispremium: "",
+    date: "",
+  });
+
   const [premiumprice, setPremiumprice] = useState(199);
+
+  const user_nameemail = async () => {
+    const response = await fetch(`http://localhost:5000/auth/getuser`, {
+      method: "POST",
+      headers: {
+      "Content-Type": "application/json",
+      "auth-token": localStorage.getItem("token"),
+      },
+    });
+    let json = await response.json();
+    console.log(json);
+    if (json.success) {
+      setUserData({
+        name: json.user.name,
+        email: json.user.email,
+        ispremium: json.user.isPremium,
+        date: json.user.date,
+      });
+    } else {
+      // toast.error("Invalid Credentials");
+      // navigate("/");
+    }
+    };
+
 
   const handlePayment = async () => {
 		try {
 
 			if(!localStorage.getItem("token")){
-				alert("You have not logged in.");
+				toast.warn("You have not logged in.");
 				return navigate("/login");
 			}
             // console.log("Hanlde")
@@ -57,7 +90,7 @@ export default function GetPremium() {
           });
           console.log(data);
           if(data.status){
-            alert("Purchased PrepPro Succesfully");
+            toast.success("Purchased PrepPro Succesfully");
             //Update in DB
             //fetch user id
             userDetails(); 
@@ -94,7 +127,7 @@ const userDetails = async () => {
   if (json.success) {
     updatepremium(json.user._id);
   } else {
-    alert("Invalid Credentials");
+    toast.error("Invalid Credentials");
     navigate("/");
   }
   };
@@ -115,6 +148,7 @@ const userDetails = async () => {
     const json =  await response.json();
 
     console.log(json);
+    toast.info("Payment details have been mailed to your registered Email Id")
      
     }
     

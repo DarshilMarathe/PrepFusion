@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
 
 import "./UserDashboard.css";
 
@@ -19,7 +21,7 @@ export default function UserDashboard() {
         userDetails();
       }
       else{
-        alert("Login to Continue")
+        toast.error("Login to Continue")
         navigate('/login')
       }
         //eslint-disable-next-line
@@ -43,7 +45,7 @@ export default function UserDashboard() {
         date: json.user.date,
       });
     } else {
-      alert("Invalid Credentials");
+      toast.warn("Invalid Credentials");
       navigate("/");
     }
   };
@@ -98,7 +100,7 @@ export default function UserDashboard() {
               </div>
             </div>
           </div>
-          <div className="db-subcription" id="subscriptions-section">
+          {/* <div className="db-subcription" id="subscriptions-section">
             <p className="db-section-heading">Your Subscription</p>
             <div className="db-plans">
               <div className="db-free">
@@ -163,7 +165,7 @@ export default function UserDashboard() {
                 <button>Get started</button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
     </div>

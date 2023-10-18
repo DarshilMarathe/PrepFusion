@@ -9,6 +9,7 @@ body {
   flex-direction: row;
   background: #eeeef1;
   overflow: hidden;
+  min-height: 100vh;
 }
 .db-left-div {
   position: fixed;

@@ -1,10 +1,14 @@
 const router = require("express").Router();
 const Razorpay = require("razorpay");
 const crypto = require("crypto");
+const nodemailer = require("nodemailer");
 
 const User = require("../models/User");
 
 const fetchuser = require('../middleware/fetchuser')
+
+let rpy_p_id = ""
+let rpy_o_id = ""
 
 router.post("/orders", async (req, res) => {
 	try {
@@ -34,8 +38,16 @@ router.post("/orders", async (req, res) => {
 
 router.post("/verify", async (req, res) => {
 	try {
-		const { razorpay_order_id, razorpay_payment_id, razorpay_signature } =
+		const { razorpay_order_id, razorpay_payment_id, razorpay_signature ,name,email} =
 			req.body;
+
+		console.log(razorpay_order_id);
+		console.log(razorpay_payment_id);
+
+		rpy_p_id = razorpay_payment_id;
+		rpy_o_id = razorpay_order_id;
+
+		
 		const sign = razorpay_order_id + "|" + razorpay_payment_id;
 		const expectedSign = crypto
 			.createHmac("sha256", process.env.KEY_SECRET)
@@ -77,7 +89,43 @@ router.put('/status/:id',fetchuser,async (req,res)=>{
 
     note = await User.findByIdAndUpdate(req.params.id,{$set : newnote}, {new : true})
     // Usually when you perform update operations in mongoose, it returns the previous state of the document (before it was updated) and not the updated one. By setting "new" to true in the third argument of the object in "findByIdAndUpdate()", we tell mongoose to return the updated state of the object instead of its default behaviour
-    res.json(note)
+    
+	console.log(note.email)
+	console.log(note.name)
+	console.log(rpy_p_id) 
+	console.log(rpy_o_id)  
+
+		const transporter = nodemailer.createTransport({
+			//   host: "smtp.forwardemail.net",
+			//   port: 465,
+			//   secure: true,
+			service:"Gmail",
+			auth: {
+				// TODO: replace `user` and `pass` values from <https://forwardemail.net>
+				user: "davidherealways@gmail.com",
+				pass: "atam szmm igzv iylo",
+			},
+			});
+
+	const options = {
+		from: 'davidherealways@gmail.com', // sender address
+		to: note.email, // list of receivers
+		subject: "PreFusion Premium Payment Details.", // Subject line
+		text: `Hey ${note.name}. \n\nThank you for subscribing to PrepPro.  \n\nPayment Details--  \nPayment Order No : ${rpy_o_id} \nPayment id : ${rpy_p_id} \n\nWith Premiumm you have access to PrepPro Bot Statistics and FAQ. \nMake the most out of it!!!`, // plain text body
+	};
+
+	transporter.sendMail(options,function(err,info){
+	if(err){
+		console.log(err);
+		return;
+	}
+
+	console.log("SENT : " + info.response);
+
+	})
+
+
+	res.json(note)
     } catch (error) {
         console.log(error.message)
         res.status(500).send("Internal Server Error Occured");

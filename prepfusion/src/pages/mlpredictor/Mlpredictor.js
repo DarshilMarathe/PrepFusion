@@ -4,6 +4,7 @@ import Tesseract from "tesseract.js";
 import initialimage from "./upload-page-image.png";
 import axios from 'axios'
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 import svgimg from './SVG.png'
 
@@ -12,12 +13,13 @@ function Mlpredictor() {
    const navigate = useNavigate();
    useEffect(() => {
      userAccess();
-       //eslint-disable-next-line
+      //  eslint-disable-next-line
    }, [])
  
+   //navigates to login
    const userAccess = ()=>{
      if(!localStorage.getItem("token")){
-       alert("Must be login to access problemset")
+      //  toast.info("Must be login to access problemset")
        navigate('/login');
      }
    }
