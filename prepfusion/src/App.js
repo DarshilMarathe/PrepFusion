@@ -14,7 +14,7 @@ import Resources from './pages/resources/Resources';
 import GetPremium from './pages/GetPremium/GetPremium';
 import FAQ from './pages/faq/FAQ';
 import ToastNotification from './components/ToastNotification';
-
+import Bookmarks from './pages/bookmarks/Bookmarks'
 
 function App() {
   return (
@@ -33,6 +33,7 @@ function App() {
       <Route path='/resources' element = {<Resources/>} />
       <Route path='/getPrepPro' element = {<GetPremium/>} />
       <Route path="/frequentQuestions" element={<FAQ/>} />
+      <Route path="/bookmarks" element={<Bookmarks/>} />
     </Routes>
 
    <Footer/>

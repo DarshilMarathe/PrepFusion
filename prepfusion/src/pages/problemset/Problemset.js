@@ -1,6 +1,8 @@
 import React from "react";
 import { useState} from "react";
 import "./Problemset.css";
+import { toast } from "react-toastify";
+
 
 import solImage from "../../images/solution-image.png";
 import top from "../../images/top.png";
@@ -26,6 +28,27 @@ export default function Problemset() {
         (selectedModule === "All" || item.Module.toString() === selectedModule)
       );
     });
+
+    const clickbookmark = async (item)=>{
+      console.log("Clicked item = " + item.Questions + item.Module + item.Marks + item.Year);
+      const {Questions,Subject,Marks,Year} = item;
+
+        //API
+        const response = await fetch(`http://127.0.0.1:5000/question/bookmark`, {
+          method: "POST", 
+          headers: {
+            "Content-Type": "application/json",
+            "auth-token": localStorage.getItem('token'),
+          },
+          body: JSON.stringify({quest : Questions,subject : Subject,marks : Marks, year : Year}), 
+        });
+        const note =  await response.json();
+        toast.success("Bookmarked Successfully");
+        // setNotes(notes.push(note));   --> updates array 
+        // setNotes(notes.concat(note)); //--> returns array
+      }
+
+
     
 
   return (
@@ -161,7 +184,7 @@ export default function Problemset() {
         <tr className="prob_row ">
           <th style={{width:"10%"}}>Sr. No</th>
           <th style={{width:"50vw"}}>Question</th>
-          <th style={{width:"10%"}}>Solution</th>
+          <th style={{width:"10%"}}>Bookmark</th>
           <th style={{width:"10%"}}>Subject</th>
           <th style={{width:"10%"}}>Marks</th>
           <th style={{width:"10%"}}>Year</th>
@@ -173,8 +196,13 @@ export default function Problemset() {
             <tr key={i}>
             <td className="table_center">{i + 1}</td>
             <td>{item.Questions}</td>
-            <td className="table_center">
-              <img src={solImage} width="18px" alt="" />
+            <td className="table_center imd_table">
+              <img src={solImage} width="18px" alt="" onClick={()=>{clickbookmark(item)}} />
+              {/* <img src={solImage} width="18px" alt="" /> */}
+              {/* <div className="dropdown-content">
+        Content to display in the dropdown 
+        <p>Dropdown content goes here.</p>
+      </div> */}
             </td>
             <td className="table_center">{item.Subject}</td>
             <td className="table_center">{item.Marks}</td>

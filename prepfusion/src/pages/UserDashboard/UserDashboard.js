@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 
@@ -81,9 +81,9 @@ export default function UserDashboard() {
             <a className="db-tab" href="#">
               Subscriptions
             </a>
-            <a className="db-tab" href="#">
+            <Link to='/bookmarks' className="db-tab" >
               Bookmarks
-            </a>
+            </Link>
           </div>
         </div>
         <div className="db-dummy" />
@@ -100,6 +100,41 @@ export default function UserDashboard() {
               </div>
             </div>
           </div>
+
+           {/* Table  */}
+      <div className="tablePS">
+      <table>
+        <tr className="prob_row ">
+          <th style={{width:"10%"}}>Sr. No</th>
+          <th style={{width:"50vw"}}>Question</th>
+          <th style={{width:"10%"}}>Solution</th>
+          <th style={{width:"10%"}}>Subject</th>
+          <th style={{width:"10%"}}>Marks</th>
+          <th style={{width:"10%"}}>Year</th>
+        </tr>
+        {/* {data.map((item, i) => (
+        // {(data.filter(item => (item.Marks === 5  && item.Year === 'Dec-19' && item.Subject === 'ADSA'  ))).map((item, i) => (
+          <tr > */}
+           {data.map((item, i) => (
+            <tr key={i}>
+            <td className="table_center">{i + 1}</td>
+            <td>{item.Questions}</td>
+            <td className="table_center imd_table">
+              {/* <img src={solImage} width="18px" alt="" /> */}
+              {/* <img src={solImage} width="18px" alt="" /> */}
+              {/* <div className="dropdown-content">
+        Content to display in the dropdown 
+        <p>Dropdown content goes here.</p>
+      </div> */}
+            </td>
+            <td className="table_center">{item.Subject}</td>
+            <td className="table_center">{item.Marks}</td>
+            <td className="table_center">{item.Year}</td>
+          </tr>
+        ))}
+      </table>
+      </div>
+    
           {/* <div className="db-subcription" id="subscriptions-section">
             <p className="db-section-heading">Your Subscription</p>
             <div className="db-plans">
@@ -171,3 +206,68 @@ export default function UserDashboard() {
     </div>
   );
 }
+
+
+
+const data = [
+  {
+    "Questions": "A secure e-voting system is to be designed. Discuss the security goals that must met and enlist mechanisms for the same.",
+    "Marks": 5,
+    "Year": "Nov-22",
+    "Module": 1,
+    "Branch": "IT",
+    "Subject": "CNS",
+    "Student_year": "T.E",
+    "Year2": 2022
+  },
+  {
+    "Questions": "Explain principle elements of NAC",
+    "Marks": 5,
+    "Year": "Nov-22",
+    "Module": 5,
+    "Branch": "IT",
+    "Subject": "CNS",
+    "Student_year": "T.E",
+    "Year2": 2022
+  },
+  {
+    "Questions": "Enlist properties and application of hash function.",
+    "Marks": 5,
+    "Year": "Nov-22",
+    "Module": 2,
+    "Branch": "IT",
+    "Subject": "CNS",
+    "Student_year": "T.E",
+    "Year2": 2022
+  },
+  {
+    "Questions": "Describe different types of Denial of service attacks",
+    "Marks": 5,
+    "Year": "Nov-22",
+    "Module": 3,
+    "Branch": "IT",
+    "Subject": "CNS",
+    "Student_year": "T.E",
+    "Year2": 2022
+  },
+  {
+    "Questions": "Explain the need of Network Access Control in Enterprise Networks. Explain the major NAC enforcement methods.",
+    "Marks": 10,
+    "Year": "Nov-22",
+    "Module": 5,
+    "Branch": "IT",
+    "Subject": "CNS",
+    "Student_year": "T.E",
+    "Year2": 2022
+  },
+  {
+    "Questions": "Explain in detail with diagram, How Kerberos can be used for authentication.",
+    "Marks": 10,
+    "Year": "Nov-22",
+    "Module": 2,
+    "Branch": "IT",
+    "Subject": "CNS",
+    "Student_year": "T.E",
+    "Year2": 2022
+  }
+]

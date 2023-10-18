@@ -1,4 +1,21 @@
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
 
+.imd_table{
+    position: relative;
+}
+.imd_table:hover .dropdown-content{
+    display: block;
+    background-color: red;
+} */
+
+.imd_table{
+    cursor: pointer;
+}
 .headerPS{
     display: flex;
     padding: 2rem;

@@ -41,6 +41,7 @@ app.use(express.json());  //orelse will return undefined on req.body
 
 //routes
 app.use('/auth', require('./routes/auth'))
+app.use('/question', require('./routes/questions'))
 app.use("/payment", paymentRoutes);
 
 app.get('/', (req, res) => {
