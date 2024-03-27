@@ -1,4 +1,6 @@
 # PrepFusion
+View Live : https://prepfusion.vercel.app/
+(Live Project has integrated backend - Do Sign Up https://prepfusion.vercel.app/ to explore complete project)
 
 Demo Link : https://drive.google.com/file/d/1ARNqlu4P0LenL48ir7udjUeaNmgJGAII/view?usp=sharing
 
