@@ -148,13 +148,13 @@ function Mlpredictor() {
                </div>
             </div>
             <div className="label-flex-ml">
-               <label for="extracttextarea">Predicted Subject:</label>
+               <label for="extracttextarea">Predicted Module:</label>
                <div readonly className="extracttextarea" name="extracttextarea">
                   {predictionModule}<a href="">copy</a>
                </div>
             </div>
             <div className="label-flex-ml">
-               <label for="extracttextarea">Predicted Module:</label>
+               <label for="extracttextarea">Predicted Subject:</label>
                <div readonly className="extracttextarea" name="extracttextarea">
                   {predictionSubject} <a href="">Copy</a>
                </div>

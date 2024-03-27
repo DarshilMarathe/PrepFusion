@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { Link,useNavigate} from "react-router-dom";
 import { toast } from 'react-toastify';
 
+
 import logo from "../../images/logo.png";
 
 export default function Navbar() {
@@ -22,16 +23,18 @@ export default function Navbar() {
 
   }
 
-  const chatbotclick =()=>{
-    if(!localStorage.getItem("token")){
-      navigate('/login')
-      //error
-      toast.warn("Login to continue")
-    }
-    else{
-      userDetailspremium();
-      }
+const chatbotclick = () => {
+  if (!localStorage.getItem('token')) {
+    // User is not logged in
+    navigate('/login');
+    // Show a message to login
+    toast.warn('Login to continue');
+  } else {
+    // User is logged in, so redirect to localhost:8000
+    window.location.href = 'http://localhost:8000';
   }
+};
+
 
   const userDetailspremium=async ()=>{
     const response = await fetch(`http://localhost:5000/auth/getuser`, {

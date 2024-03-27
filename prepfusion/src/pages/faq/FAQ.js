@@ -3,6 +3,7 @@ import { useState,useEffect} from "react";
 // import "./Problemset.css";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import dataa from '../../data.mjs';
 
 import solImage from "../../images/solution-image.png";
 import './FAQ.css'
@@ -30,7 +31,7 @@ export default function FAQ() {
   const [selectedSubject, setSelectedSubject] = useState("IP");
 
   const userDetailspremium=async ()=>{
-    const response = await fetch(`http://localhost:5000/auth/getuser`, {
+    const response = await fetch(dataa.userdata, {
         method: "POST", 
         headers: {
           "Content-Type": "application/json",

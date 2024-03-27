@@ -1,6 +1,7 @@
 import React from "react";
 import { useState,useEffect} from "react";
 // import "./Problemset.css";
+import dataa from '../../data.mjs';
 
 import del from './del.png';
 
@@ -16,7 +17,7 @@ export default function Problemset() {
       //Get all Notes
       const getBookmarks = async()=>{
         //API
-        const response = await fetch(`http://localhost:5000/question/fetchallbookmarks`, {
+        const response = await fetch(dataa.allbookmarks, {
           method: "GET", 
           headers: {
             "Content-Type": "application/json",

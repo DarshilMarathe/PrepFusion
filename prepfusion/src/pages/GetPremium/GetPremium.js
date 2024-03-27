@@ -2,6 +2,8 @@ import React,{useState} from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
+import dataa from '../../data.mjs';
+
 
 
 import "./GetPremium.css";
@@ -19,7 +21,7 @@ export default function GetPremium() {
   const [premiumprice, setPremiumprice] = useState(199);
 
   const user_nameemail = async () => {
-    const response = await fetch(`http://localhost:5000/auth/getuser`, {
+    const response = await fetch(dataa.userdata, {
       method: "POST",
       headers: {
       "Content-Type": "application/json",
@@ -50,7 +52,7 @@ export default function GetPremium() {
 				return navigate("/login");
 			}
             // console.log("Hanlde")
-			const orderUrl = "http://localhost:5000/payment/orders";
+			const orderUrl = dataa.pay_orderdetail;
 			const { data } = await axios.post(
 				orderUrl,
 				{ amount: premiumprice },
@@ -80,7 +82,7 @@ export default function GetPremium() {
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyUrl = "http://localhost:5000/payment/verify";
+          const verifyUrl = dataa.pay_verify;
           const { data } = await axios.post(verifyUrl, response, {
             headers: {
               'Access-Control-Allow-Origin': '*',
@@ -115,7 +117,7 @@ export default function GetPremium() {
   };
 
 const userDetails = async () => {
-  const response = await fetch(`http://localhost:5000/auth/getuser`, {
+  const response = await fetch(dataa.userdata, {
     method: "POST",
     headers: {
     "Content-Type": "application/json",
@@ -136,7 +138,7 @@ const userDetails = async () => {
   const updatepremium = async (id)=>{
 
     //API CALL   -- searched fetch with headers
-    const response = await fetch(`http://localhost:5000/payment/status/${id}`, {
+    const response = await fetch(`${dataa.pay_updatePremium}/${id}`, {
       method: "PUT", 
      
       headers: {

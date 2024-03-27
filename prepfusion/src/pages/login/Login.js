@@ -4,6 +4,9 @@ import { Link,useNavigate } from "react-router-dom";
 import logo from "../../images/logo.png";
 import loginimage from "./loginimage.png";
 import { toast } from "react-toastify";
+import dataa from '../../data.mjs';
+
+
 
 export default function Login() {
 
@@ -21,7 +24,7 @@ export default function Login() {
     console.log(credentials);
     e.preventDefault();
 
-    const response = await fetch(`http://localhost:5000/auth/login`, {
+    const response = await fetch(dataa.loginuser, {
       method: "POST", 
       headers: {
         "Content-Type": "application/json",

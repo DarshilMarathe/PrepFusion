@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 import {useNavigate} from "react-router-dom"
 import { Pie } from "react-chartjs-2";
 import { toast } from "react-toastify";
+import dataa from '../../data.mjs';
 
 
 import './Statistics.css'
@@ -30,7 +31,7 @@ const Statistics = () => {
   const [selectedSubject, setSelectedSubject] = useState("IP");
 
   const userDetailspremium=async ()=>{
-    const response = await fetch(`http://localhost:5000/auth/getuser`, {
+    const response = await fetch(dataa.userdata, {
         method: "POST", 
         headers: {
           "Content-Type": "application/json",

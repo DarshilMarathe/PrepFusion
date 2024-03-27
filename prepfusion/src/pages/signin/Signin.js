@@ -4,6 +4,7 @@ import { Link,useNavigate } from "react-router-dom";
 import logo from "../../images/logo.png";
 import loginimage from "./loginimage.png";
 import { toast } from "react-toastify";
+import dataa from '../../data.mjs';
 
 
 export default function Signin() {
@@ -27,7 +28,7 @@ export default function Signin() {
       toast.error("Password doesnt match")
     }
     else{
-      const response = await fetch(`http://localhost:5000/auth/createuser`, {
+      const response = await fetch(dataa.createuser, {
           method: "POST", 
           headers: {
             "Content-Type": "application/json",

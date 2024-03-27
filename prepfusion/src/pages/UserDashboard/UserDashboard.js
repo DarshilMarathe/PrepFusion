@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate,Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import dataa from '../../data.mjs';
 
 
 import "./UserDashboard.css";
@@ -28,7 +29,7 @@ export default function UserDashboard() {
     }, [])
 
   const userDetails = async () => {
-    const response = await fetch(`http://localhost:5000/auth/getuser`, {
+    const response = await fetch(dataa.userdata, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

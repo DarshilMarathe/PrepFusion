@@ -117,6 +117,9 @@ router.put('/status/:id',fetchuser,async (req,res)=>{
 	transporter.sendMail(options,function(err,info){
 	if(err){
 		console.log(err);
+		// Database store for further actions
+
+		// Send mail to user --but how alreay errkr
 		return;
 	}
 

@@ -1,6 +1,7 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 
+// import dataa from './data.mjs';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Homepage from './pages/homepage/Homepage';
@@ -17,6 +18,7 @@ import ToastNotification from './components/ToastNotification';
 import Bookmarks from './pages/bookmarks/Bookmarks'
 
 function App() {
+  // console.log(dataa.loginuser)
   return (
    <>
    <Navbar/>

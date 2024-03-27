@@ -4,6 +4,8 @@ import "./Problemset.css";
 import { toast } from "react-toastify";
 
 
+import dataa from '../../data.mjs';
+
 import solImage from "../../images/solution-image.png";
 import top from "../../images/top.png";
 import top1 from "../../images/top1.png";
@@ -34,7 +36,7 @@ export default function Problemset() {
       const {Questions,Subject,Marks,Year} = item;
 
         //API
-        const response = await fetch(`http://127.0.0.1:5000/question/bookmark`, {
+        const response = await fetch(dataa.bookmark, {
           method: "POST", 
           headers: {
             "Content-Type": "application/json",
