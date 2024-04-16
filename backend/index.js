@@ -45,7 +45,7 @@ app.use('/question', require('./routes/questions'))
 app.use("/payment", paymentRoutes);
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('BAckend Listing and Hosted By Darshil :>')
 })
 
 app.listen(port, () => {
